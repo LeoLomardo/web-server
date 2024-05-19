@@ -1,7 +1,4 @@
 
-#include "parse.h"
-#include "sigHandler.h"
-#include "log.h"
 #include "server.h"
 
 LogBuffer log_buffer;
