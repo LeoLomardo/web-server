@@ -22,5 +22,6 @@ void *filePrintLog(void *arg) {
     }
 
     fclose(logfile);
+
     return NULL;
 }

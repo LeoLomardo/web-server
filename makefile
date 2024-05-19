@@ -1,8 +1,7 @@
 CC = gcc
-CFLAGS = -g -Wall -pthread
+CFLAGS = -Wall -pthread
 DEPS = main.h server.h sigHandler.h parse.h log.h
-OBJ = main.o server.o sigHandler.o parse.o  addLog.o initLogBuffer.o logRequest.o writeLog.o
-
+OBJ = main.o server.o sigHandler.o parse.o addLog.o freeLog.o initLogBuffer.o writeLog.o 
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)

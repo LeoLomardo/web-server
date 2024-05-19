@@ -1,6 +1,7 @@
 
 #ifndef START_SERVER_H
 #define START_SERVER_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,6 +13,7 @@
 #include "parse.h"
 #include "sigHandler.h"
 #include "log.h"
+
 void start_server(Command *command);
 
 #endif

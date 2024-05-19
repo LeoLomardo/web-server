@@ -5,7 +5,7 @@ extern char *optarg;
 Command *parse(int argc, char *argv[]) {
     int opt;
 
-    Command *command = (Command*)malloc(sizeof(command)); 
+    Command *command = (Command*)malloc(sizeof(Command)); 
     if (command == NULL) {
         perror("[CONSOLE] - Error trying to malloc command.\n");
         exit(EXIT_FAILURE);

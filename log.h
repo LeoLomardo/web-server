@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <time.h>
+#include <stdlib.h>
 
 //VALORES ARBITRÁRIOS
 #define MAX_ENTRIES 200
@@ -25,6 +26,6 @@ typedef struct {
 void LBufferInit(LogBuffer *buffer, const char *filename);
 void logEntry(LogBuffer *buffer, const char *entry);
 void *filePrintLog(void *arg);
-void LRequest(LogBuffer *buffer, const char *filename);
+void LBufferDestroy(LogBuffer *buffer);
 
 #endif
