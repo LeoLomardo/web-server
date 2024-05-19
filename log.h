@@ -5,25 +5,26 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <time.h>
-#include <stdlib.h>
 
-#define MAX_LOG_ENTRIES 100
+//VALORES ARBITRÁRIOS
+#define MAX_ENTRIES 200
+#define LOG_SIZE 2048
+#define LOG_FILE_NAME_SIZE 128
 
 typedef struct {
-    char entries[MAX_LOG_ENTRIES][1024];
+    char entries[MAX_ENTRIES][LOG_SIZE];
     int start;
     int end;
     int count;
     int size;
-    char log_filename[256];
+    char *logFile;
     pthread_mutex_t mutex;
     pthread_cond_t cond;
 } LogBuffer;
 
-void init_log_buffer(LogBuffer *buffer, const char *filename);
-void add_log_entry(LogBuffer *buffer, const char *entry);
-void *log_writer(void *arg);
-void log_request(LogBuffer *buffer, const char *filename);
+void LBufferInit(LogBuffer *buffer, const char *filename);
+void logEntry(LogBuffer *buffer, const char *entry);
+void *filePrintLog(void *arg);
+void LRequest(LogBuffer *buffer, const char *filename);
 
 #endif
-

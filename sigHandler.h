@@ -1,5 +1,5 @@
-#ifndef HANDLE_CLIENT_H
-#define HANDLE_CLIENT_H
+#ifndef SIG_HANDLER_H
+#define SIG_HANDLER_H
 
 #include <stdio.h>
 #include <string.h>

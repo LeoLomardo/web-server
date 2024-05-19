@@ -12,6 +12,6 @@
 #include "parse.h"
 #include "sigHandler.h"
 #include "log.h"
-void start_server(Options *options);
+void start_server(Command *command);
 
 #endif

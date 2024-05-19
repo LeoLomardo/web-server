@@ -1,8 +1,8 @@
 #include "log.h"
 
-void *log_writer(void *arg) {
+void *filePrintLog(void *arg) {
     LogBuffer *buffer = (LogBuffer *)arg;
-    FILE *logfile = fopen(buffer->log_filename, "a+");
+    FILE *logfile = fopen(buffer->logFile, "a+");
     if (logfile == NULL) {
         perror("Failed to open log file");
         return NULL;
@@ -16,7 +16,7 @@ void *log_writer(void *arg) {
         fputs(buffer->entries[buffer->start], logfile);
         fflush(logfile);
         printf("[LOG] - Wrote log entry: %s\n", buffer->entries[buffer->start]);
-        buffer->start = (buffer->start + 1) % MAX_LOG_ENTRIES;
+        buffer->start = (buffer->start + 1) % MAX_ENTRIES;
         buffer->count--;
         pthread_mutex_unlock(&buffer->mutex);
     }

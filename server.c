@@ -3,16 +3,16 @@
 
 LogBuffer log_buffer;
 
-void start_server(Options *options) {
-    if (options == NULL) {
+void start_server(Command *command) {
+    if (command == NULL) {
         fprintf(stderr, "Options are NULL\n");
         exit(EXIT_FAILURE);
     }
 
-    init_log_buffer(&log_buffer, options->logFilename);
+    LBufferInit(&log_buffer, command->logFilename);
 
     pthread_t log_thread;
-    if (pthread_create(&log_thread, NULL, log_writer, &log_buffer) != 0) {
+    if (pthread_create(&log_thread, NULL, filePrintLog, &log_buffer) != 0) {
         perror("Failed to create log writer thread");
         exit(EXIT_FAILURE);
     }
@@ -27,7 +27,7 @@ void start_server(Options *options) {
     memset(&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = INADDR_ANY;
-    server_addr.sin_port = htons(options->port);
+    server_addr.sin_port = htons(command->port);
 
     if (bind(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
         perror("[CONSOLE] - Bind failed\n");
@@ -39,7 +39,7 @@ void start_server(Options *options) {
         exit(EXIT_FAILURE);
     }
 
-    printf("[CONSOLE] - Server started on port %d rooted @%s\n\n", options->port, options->rootDir);
+    printf("[CONSOLE] - Server started on port %d rooted @%s\n\n", command->port, command->rootDir);
 
     while (1) {
         struct sockaddr_in client_addr;

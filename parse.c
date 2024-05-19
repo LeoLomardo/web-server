@@ -2,16 +2,16 @@
 
 extern char *optarg;
 
-Options *parse(int argc, char *argv[]) {
+Command *parse(int argc, char *argv[]) {
     int opt;
 
-    Options *options = (Options*)malloc(sizeof(Options)); 
-    if (options == NULL) {
-        perror("[CONSOLE] - Error trying to malloc options.\n");
+    Command *command = (Command*)malloc(sizeof(command)); 
+    if (command == NULL) {
+        perror("[CONSOLE] - Error trying to malloc command.\n");
         exit(EXIT_FAILURE);
     }
 
-    options->background = 0;
+    command->background = 0;
 
     if (argc < 2) {
         printf("[CONSOLE] - Please start the server using the following the usage below.\n");
@@ -22,26 +22,26 @@ Options *parse(int argc, char *argv[]) {
     while ((opt = getopt(argc, argv, "p:l:s:r:b")) != -1) {
         switch (opt) {
             case 'p':
-                options->port = atoi(optarg);
+                command->port = atoi(optarg);
                 break;
             case 'l':
                 printf("[CONSOLE] - Log file name is %s.\n", optarg);
-                strncpy(options->logFilename, optarg, sizeof(options->logFilename) - 1);
-                options->logFilename[sizeof(options->logFilename) - 1] = '\0';
+                strncpy(command->logFilename, optarg, sizeof(command->logFilename) - 1);
+                command->logFilename[sizeof(command->logFilename) - 1] = '\0';
                 break;
             case 's':
                 printf("[CONSOLE] - Stats file name is %s.\n", optarg);
-                strncpy(options->statsFilename, optarg, sizeof(options->statsFilename) - 1);
-                options->statsFilename[sizeof(options->statsFilename) - 1] = '\0';
+                strncpy(command->statsFilename, optarg, sizeof(command->statsFilename) - 1);
+                command->statsFilename[sizeof(command->statsFilename) - 1] = '\0';
                 break;
             case 'r':
                 printf("[CONSOLE] - Root directory is %s.\n", optarg);
-                strncpy(options->rootDir, optarg, sizeof(options->rootDir) - 1);
-                options->rootDir[sizeof(options->rootDir) - 1] = '\0';
+                strncpy(command->rootDir, optarg, sizeof(command->rootDir) - 1);
+                command->rootDir[sizeof(command->rootDir) - 1] = '\0';
                 break;
             case 'b':
                 printf("[CONSOLE] - Background running set.\n");
-                options->background = 1;
+                command->background = 1;
                 break;
             default:
                 printf("Unknown command.\n");
@@ -49,5 +49,5 @@ Options *parse(int argc, char *argv[]) {
         }
     }
 
-    return options;
+    return command;
 }
