@@ -24,5 +24,6 @@ void init_log_buffer(LogBuffer *buffer, const char *filename);
 void add_log_entry(LogBuffer *buffer, const char *entry);
 void *log_writer(void *arg);
 void log_request(LogBuffer *buffer, const char *filename);
+
 #endif
 
