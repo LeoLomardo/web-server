@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -pthread
-DEPS = main.h server.h sigHandler.h log.h parse.c calcStatistics.c
-OBJ = main.o server.o sigHandler.o log.o parse.o calcStatistics.o
+DEPS = main.h server.h sigHandler.h log.h parse.c 
+OBJ = main.o server.o sigHandler.o log.o parse.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
@@ -13,3 +13,5 @@ web_server: $(OBJ)
 
 clean:
 	rm -f *.o web_server
+
+	
