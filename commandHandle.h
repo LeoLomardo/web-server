@@ -1,6 +1,6 @@
 
-#ifndef PARSE_H
-#define PARSE_H
+#ifndef COMMAND_HANDLE_C
+#define COMMAND_HANDLE_C
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,6 +15,6 @@ typedef struct command {
     int background;
 } Command;
 
-Command *parse(int argc, char *argv[]);
+Command *extractCommandOptions(int argc, char *argv[]);
 
 #endif

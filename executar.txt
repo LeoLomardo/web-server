@@ -1,2 +1,1 @@
-gcc -o main main.c parse.c server.c sigHandler.c initLogBuffer.c writeLog.c freeLog.c addLog.c
 ./web_server -p 3000 -l log.txt -s stats.txt -r ./ -b

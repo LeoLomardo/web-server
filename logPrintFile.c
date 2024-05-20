@@ -1,11 +1,11 @@
 #include "log.h"
 
-void *filePrintLog(void *arg) {
+void *LPrinfFile(void *arg) {
     LogBuffer *buffer = (LogBuffer *)arg;
     FILE *logfile = fopen(buffer->logFile, "a+");
     if (logfile == NULL) {
         perror("Failed to open log file");
-        return NULL;
+        exit(1);
     }
 
     while (1) {

@@ -10,10 +10,10 @@
 #include <sys/socket.h>
 #include <pthread.h>
 #include <arpa/inet.h>
-#include "parse.h"
-#include "sigHandler.h"
+#include "commandHandle.h"
+#include "client.h"
 #include "log.h"
 
-void start_server(Command *command);
+void serverRun(Command *command);
 
 #endif

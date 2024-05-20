@@ -3,7 +3,7 @@
 
 LogBuffer log_buffer;
 
-void start_server(Command *command) {
+void serverRun(Command *command) {
     if (command == NULL) {
         fprintf(stderr, "Options are NULL\n");
         exit(EXIT_FAILURE);
@@ -12,7 +12,7 @@ void start_server(Command *command) {
     LBufferInit(&log_buffer, command->logFilename);
 
     pthread_t log_thread;
-    if (pthread_create(&log_thread, NULL, filePrintLog, &log_buffer) != 0) {
+    if (pthread_create(&log_thread, NULL, LPrinfFile, &log_buffer) != 0) {
         perror("Failed to create log writer thread");
         exit(EXIT_FAILURE);
     }
@@ -59,7 +59,7 @@ void start_server(Command *command) {
         printf("[SERVER] - Connection accepted from %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
     
         pthread_t thread_id;
-        if (pthread_create(&thread_id, NULL, handle_client, new_sockfd) != 0) {
+        if (pthread_create(&thread_id, NULL, clientRequest, new_sockfd) != 0) {
             perror("[CONSOLE] - Failed to create thread\n");
             close(*new_sockfd);
             free(new_sockfd);

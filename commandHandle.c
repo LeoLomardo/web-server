@@ -1,8 +1,8 @@
-#include "parse.h"
+#include "commandHandle.h"
 
 extern char *optarg;
 
-Command *parse(int argc, char *argv[]) {
+Command *extractCommandOptions(int argc, char *argv[]) {
     int opt;
 
     Command *command = (Command*)malloc(sizeof(Command)); 

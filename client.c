@@ -1,10 +1,10 @@
 
 #include "log.h"
-#include "sigHandler.h"
+#include "client.h"
 
 extern LogBuffer log_buffer;
 
-void *handle_client(void *client_sockfd) {
+void *clientRequest(void *client_sockfd) {
     time_t now = time(NULL);
     struct tm *t = localtime(&now);
     int sock = *(int *)client_sockfd;
@@ -25,13 +25,13 @@ void *handle_client(void *client_sockfd) {
     char full_path[256] = ".";
     strcat(full_path, path);
 
-    FILE *f = fopen(full_path, "r+");
+    FILE *inputFIle = fopen(full_path, "r+");
 
-    if (f == NULL) {
+    if (inputFIle == NULL) {
         char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
         write(sock, error_message, strlen(error_message));
         snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 404 Not Found: %s\n",t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
-        logEntry(&log_buffer, buffer);
+        LEntry(&log_buffer, buffer);
     } else {
         char *header = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n";
         write(sock, header, strlen(header));
@@ -39,14 +39,14 @@ void *handle_client(void *client_sockfd) {
 
         char file_buffer[1024];
         int bytes_read;
-        while ((bytes_read = fread(file_buffer, 1, sizeof(file_buffer), f)) > 0) {
+        while ((bytes_read = fread(file_buffer, 1, sizeof(file_buffer), inputFIle)) > 0) {
             write(sock, file_buffer, bytes_read);
             printf("%s\n", file_buffer);
         }
 
         snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n",t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
-        logEntry(&log_buffer, buffer);
-        fclose(f);
+        LEntry(&log_buffer, buffer);
+        fclose(inputFIle);
     }
 
     close(sock);

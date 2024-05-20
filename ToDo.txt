@@ -1,16 +1,21 @@
 --Todo:
-	-Renomear arquivos pra ficar mais fácil de entender e navegar por eles
+	-Renomear arquivos pra ficar mais facil de entender e navegar por eles
 		-Talvez traduzir todo o cóidigo
-	-Arrumar makefile/ verificar com professor se está certo
+	-Arrumar makefile/ verificar com professor se esta certo
 		-Fazer compila .sh
 	-Fazer testes .sh
 		-Desenvolver testes
 		-Automatizar diferentes requests
+			|->slip regiao critica
+				ou
+			|->.sh ou curl/wget requisi�oes em paralelo
 		-Testar imagem, html e texto
 	-Valgrind checar memoryleak
 	
---Dúvidas:
-	-Cada arquivo C com apenas 1 função?
-	-Podem 2 arquivos C diferentes terem apenas 1 headder?
+--Duvidas:
+	-Cada arquivo C com apenas 1 funcao? SIM
+	-Podem 2 arquivos C diferentes terem apenas 1 headder? SIM
 	-Como testar erros? 
 	-Formato ideal para printar Erros?
+
+
