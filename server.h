@@ -13,7 +13,11 @@
 #include "commandHandle.h"
 #include "client.h"
 #include "log.h"
+#include "sigHandler.h"
+
+extern int html_count, image_count, text_count;
 
 void serverRun(Command *command);
+void generate_statistics(const char *filename);
 
 #endif

@@ -1,4 +1,3 @@
-
 #include "server.h"
 
 LogBuffer log_buffer;

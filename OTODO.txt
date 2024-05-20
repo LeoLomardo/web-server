@@ -1,0 +1,380 @@
+---------CABECALHOS-------------
+client.h
+    #ifndef CLIENT_H
+#define CLIENT_H
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+void *clientRequest(void *client_sockfd);
+
+#endif
+
+
+#ifndef COMMAND_HANDLE_C
+#define COMMAND_HANDLE_C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+
+typedef struct command {
+    int port;
+    char logFilename[256];
+    char statsFilename[256];
+    char rootDir[256];
+    int background;
+} Command;
+
+Command *extractCommandOptions(int argc, char *argv[]);
+
+#endif
+
+#ifndef LOG_H
+#define LOG_H
+
+#include <string.h>
+#include <stdio.h>
+#include <pthread.h>
+#include <time.h>
+#include <stdlib.h>
+
+//VALORES ARBITRÁRIOS
+#define MAX_ENTRIES 200
+#define LOG_SIZE 2048
+#define LOG_FILE_NAME_SIZE 128
+
+typedef struct {
+    char entries[MAX_ENTRIES][LOG_SIZE];
+    int start;
+    int end;
+    int count;
+    int size;
+    char *logFile;
+    pthread_mutex_t mutex;
+    pthread_cond_t cond;
+} LogBuffer;
+
+void LBufferInit(LogBuffer *buffer, const char *filename);
+void LEntry(LogBuffer *buffer, const char *entry);
+void *LPrinfFile(void *arg);
+void LBufferFree(LogBuffer *buffer);
+
+#endif
+
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <assert.h>
+#include <sys/socket.h>
+
+#include "commandHandle.h"
+#include "server.h"
+
+
+#endif
+
+
+
+#ifndef START_SERVER_H
+#define START_SERVER_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <pthread.h>
+#include <arpa/inet.h>
+#include "commandHandle.h"
+#include "client.h"
+#include "log.h"
+
+void serverRun(Command *command);
+
+#endif
+---------ARQUIVOS C-------------
+
+#include "log.h"
+#include "client.h"
+
+extern LogBuffer log_buffer;
+
+void *clientRequest(void *client_sockfd) {
+    time_t now = time(NULL);
+    struct tm *t = localtime(&now);
+    int sock = *(int *)client_sockfd;
+    free(client_sockfd);
+
+    char buffer[1024];
+    int read_size = read(sock, buffer, sizeof(buffer) - 1);
+    if (read_size > 0) {
+        buffer[read_size] = '\0';
+        printf("[SERVER] - Received data: %s\n", buffer);
+    } else {
+        perror("[SERVER] - Read failed\n");
+    }
+
+    char method[10], path[255], protocol[10];
+    sscanf(buffer, "%s %s %s", method, path, protocol);
+
+    char full_path[256] = ".";
+    strcat(full_path, path);
+
+    FILE *inputFIle = fopen(full_path, "r+");
+
+    if (inputFIle == NULL) {
+        char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
+        write(sock, error_message, strlen(error_message));
+        snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 404 Not Found: %s\n",t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
+        LEntry(&log_buffer, buffer);
+    } else {
+        char *header = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n";
+        write(sock, header, strlen(header));
+        printf("[SERVER] - %s", header);
+
+        char file_buffer[1024];
+        int bytes_read;
+        while ((bytes_read = fread(file_buffer, 1, sizeof(file_buffer), inputFIle)) > 0) {
+            write(sock, file_buffer, bytes_read);
+            printf("%s\n", file_buffer);
+        }
+
+        snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n",t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
+        LEntry(&log_buffer, buffer);
+        fclose(inputFIle);
+    }
+
+    close(sock);
+
+    return NULL;
+}
+
+#include "commandHandle.h"
+
+extern char *optarg;
+
+Command *extractCommandOptions(int argc, char *argv[]) {
+    int opt;
+
+    Command *command = (Command*)malloc(sizeof(Command)); 
+    if (command == NULL) {
+        perror("[CONSOLE] - Error trying to malloc command.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    command->background = 0;
+
+    if (argc < 2) {
+        printf("[CONSOLE] - Please start the server using the following the usage below.\n");
+        printf("Usage: %s -p <port> -l <logfile> -s <statsfile> -r <rootdir> -b\n", argv[0]);
+        exit(EXIT_FAILURE);
+    }
+
+    while ((opt = getopt(argc, argv, "p:l:s:r:b")) != -1) {
+        switch (opt) {
+            case 'p':
+                command->port = atoi(optarg);
+                break;
+            case 'l':
+                printf("[CONSOLE] - Log file name is %s.\n", optarg);
+                strncpy(command->logFilename, optarg, sizeof(command->logFilename) - 1);
+                command->logFilename[sizeof(command->logFilename) - 1] = '\0';
+                break;
+            case 's':
+                printf("[CONSOLE] - Stats file name is %s.\n", optarg);
+                strncpy(command->statsFilename, optarg, sizeof(command->statsFilename) - 1);
+                command->statsFilename[sizeof(command->statsFilename) - 1] = '\0';
+                break;
+            case 'r':
+                printf("[CONSOLE] - Root directory is %s.\n", optarg);
+                strncpy(command->rootDir, optarg, sizeof(command->rootDir) - 1);
+                command->rootDir[sizeof(command->rootDir) - 1] = '\0';
+                break;
+            case 'b':
+                printf("[CONSOLE] - Background running set.\n");
+                command->background = 1;
+                break;
+            default:
+                printf("Unknown command.\n");
+                exit(EXIT_FAILURE);
+        }
+    }
+
+    return command;
+}
+#include "log.h"
+
+void LEntry(LogBuffer *buffer, const char *entry) {
+    pthread_mutex_lock(&buffer->mutex);
+    if (buffer->count < MAX_ENTRIES) {
+        strncpy(buffer->entries[buffer->end], entry, sizeof(buffer->entries[buffer->end]) - 1);
+        buffer->entries[buffer->end][sizeof(buffer->entries[buffer->end]) - 1] = '\0';
+        buffer->end = (buffer->end + 1) % MAX_ENTRIES;
+        buffer->count++;
+        pthread_cond_signal(&buffer->cond);
+        printf("[LOG] - Added log entry: %s\n", entry);
+    } else {
+        printf("[LOG] - Log buffer full, entry discarded: %s\n", entry);
+    }
+    pthread_mutex_unlock(&buffer->mutex);
+}
+
+#include "log.h"
+
+void LBufferFree(LogBuffer *buffer) {
+    free(buffer->logFile);
+    pthread_mutex_destroy(&buffer->mutex);
+    pthread_cond_destroy(&buffer->cond);
+}
+
+#include "log.h"
+
+void LBufferInit(LogBuffer *buffer, const char *filename) {
+    buffer->start = 0;
+    buffer->end = 0;
+    buffer->count = 0;
+    buffer->size = LOG_SIZE;
+
+    buffer->logFile = (char *)malloc(strlen(filename) + 1); 
+    if (buffer->logFile == NULL) {
+        perror("Failed to allocate memory for logFile");
+        exit(EXIT_FAILURE);
+    }
+    strcpy(buffer->logFile, filename);
+    //buffer->logFile[sizeof(buffer->logFile) - 1] = '\0';
+
+    pthread_mutex_init(&buffer->mutex, NULL);
+    pthread_cond_init(&buffer->cond, NULL);
+}
+#include "log.h"
+
+void *LPrinfFile(void *arg) {
+    LogBuffer *buffer = (LogBuffer *)arg;
+    FILE *logfile = fopen(buffer->logFile, "a+");
+    if (logfile == NULL) {
+        perror("Failed to open log file");
+        exit(1);
+    }
+
+    while (1) {
+        pthread_mutex_lock(&buffer->mutex);
+        while (buffer->count == 0) {
+            pthread_cond_wait(&buffer->cond, &buffer->mutex);
+        }
+        fputs(buffer->entries[buffer->start], logfile);
+        fflush(logfile);
+        printf("[LOG] - Wrote log entry: %s\n", buffer->entries[buffer->start]);
+        buffer->start = (buffer->start + 1) % MAX_ENTRIES;
+        buffer->count--;
+        pthread_mutex_unlock(&buffer->mutex);
+    }
+
+    fclose(logfile);
+
+    return NULL;
+}
+#include "main.h"
+
+int main(int argc, char *argv[]) {
+    Command *command = extractCommandOptions(argc, argv);
+    serverRun(command);
+
+    return 0;
+}
+
+#include "server.h"
+
+LogBuffer log_buffer;
+
+void serverRun(Command *command) {
+    if (command == NULL) {
+        fprintf(stderr, "Options are NULL\n");
+        exit(EXIT_FAILURE);
+    }
+
+    LBufferInit(&log_buffer, command->logFilename);
+
+    pthread_t log_thread;
+    if (pthread_create(&log_thread, NULL, LPrinfFile, &log_buffer) != 0) {
+        perror("Failed to create log writer thread");
+        exit(EXIT_FAILURE);
+    }
+
+    int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (sockfd < 0) {
+        perror("[CONSOLE] - Error creating socket\n");
+        exit(EXIT_FAILURE);
+    }
+
+    struct sockaddr_in server_addr;
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_addr.s_addr = INADDR_ANY;
+    server_addr.sin_port = htons(command->port);
+
+    if (bind(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+        perror("[CONSOLE] - Bind failed\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (listen(sockfd, 5) < 0) {
+        perror("[CONSOLE] - Listen failed\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("[CONSOLE] - Server started on port %d rooted @%s\n\n", command->port, command->rootDir);
+
+    while (1) {
+        struct sockaddr_in client_addr;
+        socklen_t client_len = sizeof(client_addr);
+        int *new_sockfd = malloc(sizeof(int));
+        if (new_sockfd == NULL) {
+            perror("[CONSOLE] - Failed to allocate memory for new socket\n");
+            continue;
+        }
+        *new_sockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
+        if (*new_sockfd < 0) {
+            perror("[CONSOLE] - Accept failed\n");
+            free(new_sockfd);
+            continue;
+        }
+
+        printf("[SERVER] - Connection accepted from %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+    
+        pthread_t thread_id;
+        if (pthread_create(&thread_id, NULL, clientRequest, new_sockfd) != 0) {
+            perror("[CONSOLE] - Failed to create thread\n");
+            close(*new_sockfd);
+            free(new_sockfd);
+            continue;
+        }
+        printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+        pthread_detach(thread_id);
+    }
+}
+
+---------MAKEFILE-------------
+
+CC = gcc
+CFLAGS = -Wall -pthread -pedantic 
+DEPS = main.h server.h client.h commandHandle.h log.h
+OBJ = main.o server.o client.o commandHandle.o logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o 
+
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+web_server: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+.PHONY: clean
+
+clean:
+	rm -f *.o web_server
