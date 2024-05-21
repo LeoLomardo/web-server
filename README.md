@@ -11,7 +11,7 @@ Este projeto é parte do curso de Ferramentas do Unix da PUC-Rio, ministrado pel
 
 Para mais detalhes sobre o projeto, consulte os documentos a seguir:
 
-- [PDF do Trabalho](caminho/para/Trabalho_2 (4).pdf)
+- [PDF do Trabalho](Trabalho_2.pdf)
 
 ---
 
@@ -67,11 +67,23 @@ Todos os arquivos-fontes (arquivo C e cabeçalhos) e o makefile devem ser carreg
 2. Compile o projeto:
     ```bash
     make
+    
     ```
+3. Inicie o servidor:
+    ```bash
+    ./web_server -p 8080 -l log.txt -s stats.txt -r ./ -b 
+    ```
+    
+### Uso e Testes
 
-### Uso
-
-Inicie o servidor:
+Em um novo terminal, execute o shell script:
 ```bash
-./servidor -p 8080 -r /caminho/para/site
- 
+chmod u+x testes.sh
+./testes.sh
+```
+
+Caso queira realizar apenas testes pontuais, execute utilizando curl:
+```bash
+curl curl http://localhost:3000/index.html
+```
+
