@@ -18,6 +18,5 @@
 extern int html_count, image_count, text_count;
 
 void serverRun(Command *command);
-void generate_statistics(const char *filename);
 
 #endif

@@ -1,1 +1,7 @@
 ./web_server -p 3000 -l log.txt -s stats.txt -r ./ -b
+                    OU
+./web_server -p 3000 -l log.txt -s stats.txt -r ./ -b
+
+
+chmod u+x testes.sh
+./testes.sh

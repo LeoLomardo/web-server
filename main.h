@@ -6,9 +6,10 @@
 #include <pthread.h>
 #include <assert.h>
 #include <sys/socket.h>
+#include <signal.h>
 
 #include "commandHandle.h"
 #include "server.h"
-
+#include "sigHandler.h"
 
 #endif

@@ -1,7 +1,5 @@
 #include "commandHandle.h"
 
-extern char *optarg;
-
 Command *extractCommandOptions(int argc, char *argv[]) {
     int opt;
 

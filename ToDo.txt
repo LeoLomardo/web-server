@@ -15,8 +15,8 @@
 --Duvidas:
 	-Cada arquivo C com apenas 1 funcao? SIM
 	-Podem 2 arquivos C diferentes terem apenas 1 headder? SIM
-	-Como testar erros?  
-	-Formato ideal para printar Erros?
+	-Como testar erros?  Ta feito, .sh
+	-Formato ideal para printar Erros? Ta feito 
 
 
 infos: ulimit pra liberar + threads
