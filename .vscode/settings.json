@@ -7,7 +7,14 @@
         "client.h": "c",
         "server.h": "c",
         "signal.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "in.h": "c",
+        "stdio.h": "c",
+        "sighandler.h": "c",
+        "globais.h": "c",
+        "pthread.h": "c",
+        "socket.h": "c",
+        "main.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

@@ -4,9 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
+#include <string.h>
 
-void *statisticsPrint(const char *statsFile);
+#include "commandHandle.h"
+#include "globais.h"
 
-extern int html_count, image_count, text_count;
+void *statisticsPrint(Command *command);
 
 #endif

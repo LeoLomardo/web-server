@@ -8,8 +8,9 @@
 #include <sys/socket.h>
 #include <signal.h>
 
-#include "commandHandle.h"
 #include "server.h"
+#include "commandHandle.h"
+#include "globais.h"
 #include "sigHandler.h"
 
 #endif

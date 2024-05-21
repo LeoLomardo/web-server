@@ -10,12 +10,16 @@
 #include <sys/socket.h>
 #include <pthread.h>
 #include <arpa/inet.h>
+
 #include "commandHandle.h"
-#include "client.h"
 #include "log.h"
+#include "client.h"
 #include "sigHandler.h"
 
-extern int html_count, image_count, text_count;
+extern int html_count; 
+extern int image_count;
+extern int text_count;
+
 
 void serverRun(Command *command);
 

@@ -1,4 +1,6 @@
 #include "server.h"
+#include "globais.h"
+#include "sigHandler.h"
 
 LogBuffer log_buffer;
 
@@ -66,5 +68,7 @@ void serverRun(Command *command) {
         }
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
+       
+
     }
 }
