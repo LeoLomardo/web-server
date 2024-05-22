@@ -4,7 +4,7 @@ LogBuffer log_buffer;
 
 void serverRun(Command *command) {
     if (command == NULL) {
-        fprintf(stderr, "Options are NULL\n");
+        fprintf(stderr, "[ERROR] Options are NULL\n");
         exit(EXIT_FAILURE);
     }
 
@@ -12,13 +12,13 @@ void serverRun(Command *command) {
 
     pthread_t log_thread;
     if (pthread_create(&log_thread, NULL, LPrinfFile, &log_buffer) != 0) {
-        perror("Failed to create log writer thread");
+        fprintf(stderr, "[ERROR] Failed to create log writer thread\n");
         exit(EXIT_FAILURE);
     }
 
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) {
-        perror("[CONSOLE] - Error creating socket\n");
+        fprintf(stderr,"[CONSOLE] - Error creating socket\n");
         exit(EXIT_FAILURE);
     }
 
@@ -29,12 +29,12 @@ void serverRun(Command *command) {
     server_addr.sin_port = htons(command->port);
 
     if (bind(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
-        perror("[CONSOLE] - Bind failed\n");
+        fprintf(stderr,"[CONSOLE] - Bind failed\n");
         exit(EXIT_FAILURE);
     }
 
     if (listen(sockfd, 5) < 0) {
-        perror("[CONSOLE] - Listen failed\n");
+        fprintf(stderr,"[CONSOLE] - Listen failed\n");
         exit(EXIT_FAILURE);
     }
 
@@ -45,12 +45,12 @@ void serverRun(Command *command) {
         socklen_t client_len = sizeof(client_addr);
         int *new_sockfd = malloc(sizeof(int));
         if (new_sockfd == NULL) {
-            perror("[CONSOLE] - Failed to allocate memory for new socket\n");
+            fprintf(stderr,"[CONSOLE] - Failed to allocate memory for new socket\n");
             continue;
         }
         *new_sockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
         if (*new_sockfd < 0) {
-            perror("[CONSOLE] - Accept failed\n");
+            fprintf(stderr,"[CONSOLE] - Accept failed\n");
             free(new_sockfd);
             continue;
         }
@@ -59,7 +59,7 @@ void serverRun(Command *command) {
     
         pthread_t thread_id;
         if (pthread_create(&thread_id, NULL, clientRequest, new_sockfd) != 0) {
-            perror("[CONSOLE] - Failed to create thread\n");
+            fprintf(stderr, "[CONSOLE] - Failed to create thread\n");
             close(*new_sockfd);
             free(new_sockfd);
             continue;
@@ -67,6 +67,5 @@ void serverRun(Command *command) {
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
        
-
     }
 }

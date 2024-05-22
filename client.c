@@ -14,7 +14,7 @@ void *clientRequest(void *client_sockfd) {
         buffer[read_size] = '\0';
         printf("[SERVER] - Received data: %s\n", buffer);
     } else {
-        perror("[SERVER] - Read failed\n");
+        fprintf(stderr, "[SERVER] - Read failed\n");
     }
 
     char method[10], path[255], protocol[10];
@@ -28,11 +28,9 @@ void *clientRequest(void *client_sockfd) {
     if (inputFile == NULL) {
         char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
         write(sock, error_message, strlen(error_message));
-        snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 404 Not Found: %s\n",
-                 t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
+        snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 404 Not Found: %s\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
         LEntry(&log_buffer, buffer);
     } else {
-        // Detectar o tipo de arquivo pela extensão
         char *ext = strrchr(full_path, '.');
         char *header;
 
@@ -65,20 +63,11 @@ void *clientRequest(void *client_sockfd) {
             printf("%s\n", file_buffer);
         }
 
-        snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n",
-                 t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
+        snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
         LEntry(&log_buffer, buffer);
         fclose(inputFile);
     }
 
-    /* Escrever as estatísticas no arquivo stats.txt
-    FILE *statsFile = fopen("stats.txt", "w");
-    if (statsFile != NULL) {
-        fprintf(statsFile, "HTML: %d\nIMAGEM: %d\nTEXTO: %d ", html_count, image_count, text_count);
-        fclose(statsFile);
-    } else {
-        perror("[SERVER] - Failed to open stats.txt\n");
-    }*/
 
     close(sock);
 

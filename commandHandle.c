@@ -5,7 +5,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
 
     Command *command = (Command*)malloc(sizeof(Command)); 
     if (command == NULL) {
-        perror("[CONSOLE] - Error trying to malloc command.\n");
+        fprintf(stderr,"[CONSOLE] - Error trying to malloc command.\n");
         exit(EXIT_FAILURE);
     }
 
@@ -42,7 +42,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 command->background = 1;
                 break;
             default:
-                printf("Unknown command.\n");
+                fprintf(stderr, "Unknown command.\n");
                 exit(EXIT_FAILURE);
         }
     }

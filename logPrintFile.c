@@ -1,11 +1,12 @@
 #include "log.h"
 
 void *LPrinfFile(void *arg) {
+    
     LogBuffer *buffer = (LogBuffer *)arg;
     FILE *logfile = fopen(buffer->logFile, "a+");
     if (logfile == NULL) {
-        perror("Failed to open log file");
-        exit(1);
+        fprintf(stderr,"Failed to open log file\n");
+        exit(EXIT_FAILURE);
     }
 
     while (1) {

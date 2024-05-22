@@ -8,7 +8,6 @@
 
 #include "log.h"
 #include "globais.h"
-
 void *clientRequest(void *client_sockfd);
 
 #endif

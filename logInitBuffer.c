@@ -8,7 +8,7 @@ void LBufferInit(LogBuffer *buffer, const char *filename) {
 
     buffer->logFile = (char *)malloc(strlen(filename) + 1); 
     if (buffer->logFile == NULL) {
-        perror("Failed to allocate memory for logFile");
+        fprintf(stderr,"Failed to allocate memory for logFile\n");
         exit(EXIT_FAILURE);
     }
     strcpy(buffer->logFile, filename);
