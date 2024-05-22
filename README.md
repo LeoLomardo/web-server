@@ -61,25 +61,26 @@ Todos os arquivos-fontes (arquivo C e cabeçalhos) e o makefile devem ser carreg
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/LeoLomardo/web-server.git
-    cd web-server
+    $git clone https://github.com/LeoLomardo/web-server.git
+    $cd web-server
     ```
 2. Compile o projeto:
     ```bash
-    make
+    $make
     
     ```
-3. Inicie o servidor:
+3. Inicie o servidor utilizando a porta desejada, eu testei utilizando as portas 8080 ou 3000:
     ```bash
-    ./web_server -p 8080 -l log.txt -s stats.txt -r ./ -b 
+    $./web_server -p 8080 -l log.txt -s stats.txt -r ./ -b
+    $./web_server -p 3000 -l log.txt -s stats.txt -r ./ -b 
     ```
     
 ### Uso e Testes
 
 Em um novo terminal, execute o shell script:
 ```bash
-chmod u+x testes.sh
-./testes.sh
+$chmod u+x testes.sh
+$./testes.sh
 ```
 
 Caso queira realizar apenas testes pontuais, execute utilizando curl:
