@@ -1,50 +1,25 @@
+# Definições de compilador e flags
 CC = gcc
-CFLAGS = -Wall -pthread -pedantic 
+CFLAGS = -Wall -pthread -pedantic
 
-# Cabeçalhos
-DEPS_MAIN = main.h server.h client.h commandHandle.h globais.h
-DEPS_LOG = log.h 
+# Arquivos de cabeçalho
+DEPS = client.h commandHandle.h globals.h log.h main.h server.h sigHandler.h
 
-# Objetos
-OBJ_MAIN = main.o server.o client.o commandHandle.o
-OBJ_LOG = logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o  
+# Arquivos objeto
+OBJ = client.o commandHandle.o logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o main.o server.o sigHandler.o
 
-all: web_server clean_objs
+# Regra padrão
+all: web_server
 
-%.o: %.c %.h
+# Regras para compilar arquivos objeto
+%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-main.o: main.c $(DEPS_MAIN)
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-server.o: server.c server.h
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-client.o: client.c client.h
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-commandHandle.o: commandHandle.c commandHandle.h
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-logAddEntry.o: logAddEntry.c log.h
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-logFree.o: logFree.c log.h
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-logInitBuffer.o: logInitBuffer.c log.h
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-logPrintFile.o: logPrintFile.c log.h
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-web_server: $(OBJ_MAIN) $(OBJ_LOG)
+# Regra para compilar o executável
+web_server: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-.PHONY: clean clean_objs
-
-clean: clean_objs
-	rm -f web_server
-
-clean_objs:
-	rm -f *.o
+# Regra para limpar arquivos compilados
+.PHONY: clean
+clean:
+	rm -f *.o web_server

@@ -9,13 +9,13 @@ extern Command *command;
 
 void *statisticsPrint(Command *command){
     char *statsFile;
-    statsFile = (char *) malloc(strlen(command->logFile) + 1);
-    strncpy(statsFile, command->logFile, strlen(command->logFile) + 1);
-    statsFile[strlen(command->logFile)] = '\0';
-        FILE *statsFile = fopen("stats.txt", "w");
-        if (statsFile != NULL) {
-            fprintf(statsFile, "HTML: %d\nIMAGEM: %d\nTEXTO: %d\nOUTROS:%d\n", html_count, image_count, text_count);
-            fclose(statsFile);
+    statsFile = (char *) malloc(strlen(command->logFilename) + 1);
+    strncpy(statsFile, command->logFilename, strlen(command->logFilename) + 1);
+    statsFile[strlen(command->logFilename)] = '\0';
+        FILE *arquivoStats = fopen(statsFile, "w");
+        if (arquivoStats != NULL) {
+            fprintf(arquivoStats, "HTML: %d\nIMAGEM: %d\nTEXTO: %d\n", html_count, image_count, text_count);
+            fclose(arquivoStats);
         } else {
             perror("[SERVER] - Failed to open stats.txt\n");
         }

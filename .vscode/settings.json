@@ -14,7 +14,8 @@
         "globais.h": "c",
         "pthread.h": "c",
         "socket.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "wait.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
