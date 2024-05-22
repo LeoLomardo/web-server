@@ -1,4 +1,4 @@
-#include "sigHandler.h"
+#include "statisticsFile.h"
 
 int html_count = 0;
 int image_count = 0;

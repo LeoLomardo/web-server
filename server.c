@@ -1,6 +1,4 @@
 #include "server.h"
-#include "globais.h"
-#include "sigHandler.h"
 
 LogBuffer log_buffer;
 

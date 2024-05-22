@@ -14,7 +14,8 @@
 #include "commandHandle.h"
 #include "log.h"
 #include "client.h"
-#include "sigHandler.h"
+#include "statisticsFile.h"
+#include "globais.h"
 
 extern int html_count; 
 extern int image_count;

@@ -1,11 +1,6 @@
 #include "main.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include "sigHandler.h"
+
 
 // int html_count = 0;
 // int image_count = 0;
