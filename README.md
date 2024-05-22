@@ -87,4 +87,7 @@ Caso queira realizar apenas testes pontuais, execute utilizando curl:
 ```bash
 curl curl http://localhost:3000/index.html
 ```
-
+Valgrind:
+```bash
+valgrind  --leak-check=full --show-leak-kinds=all -s  ./web_server   
+```
