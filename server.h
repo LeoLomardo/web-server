@@ -14,12 +14,8 @@
 #include "commandHandle.h"
 #include "log.h"
 #include "client.h"
-#include "statisticsFile.h"
-#include "globais.h"
+#include "statsInfo.h"
 
-extern int html_count; 
-extern int image_count;
-extern int text_count;
 
 
 void serverRun(Command *command);

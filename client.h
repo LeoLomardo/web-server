@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 #include "log.h"
-#include "globais.h"
+#include "statsInfo.h"
 void *clientRequest(void *client_sockfd);
 
 #endif

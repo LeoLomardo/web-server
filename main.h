@@ -9,8 +9,7 @@
 
 #include "server.h"
 #include "commandHandle.h"
-#include "globais.h"
-#include "statisticsFile.h"
+#include "statsInfo.h"
 
 
 #endif

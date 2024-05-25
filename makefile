@@ -3,10 +3,10 @@ CC = gcc
 CFLAGS = -Wall -pthread -pedantic
 
 # Arquivos de cabeçalho
-DEPS = client.h commandHandle.h globals.h log.h main.h server.h statisticsFile.h
+DEPS = client.h commandHandle.h globals.h log.h main.h server.h statsInfo.h 
 
 # Arquivos objeto
-OBJ = client.o commandHandle.o logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o main.o server.o statisticsFile.o
+OBJ = client.o commandHandle.o logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o main.o server.o saveStats.o statsInit.o
 
 # Regra padrão
 all: web_server

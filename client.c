@@ -1,6 +1,7 @@
 #include "client.h"
 
 extern LogBuffer log_buffer;
+extern StatsInfo stats;
 
 void *clientRequest(void *client_sockfd) {
     time_t now = time(NULL);
@@ -24,7 +25,7 @@ void *clientRequest(void *client_sockfd) {
     strcat(full_path, path);
 
     FILE *inputFile = fopen(full_path, "r+");
-
+    printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
     if (inputFile == NULL) {
         char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
         write(sock, error_message, strlen(error_message));
@@ -36,17 +37,17 @@ void *clientRequest(void *client_sockfd) {
 
         if (ext != NULL) {
             if (strcmp(ext, ".html") == 0) {
-                html_count++;
+                stats.html_count++;
                 header = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n";
             } else if (strcmp(ext, ".jpg") == 0 || strcmp(ext, ".jpeg") == 0 || strcmp(ext, ".png") == 0) {
-                image_count++;
+                stats.image_count++;
                 if (strcmp(ext, ".jpg") == 0 || strcmp(ext, ".jpeg") == 0) {
                     header = "HTTP/1.1 200 OK\r\nContent-Type: image/jpeg\r\n\r\n";
                 } else {
                     header = "HTTP/1.1 200 OK\r\nContent-Type: image/png\r\n\r\n";
                 }
             } else {
-                text_count++;
+                stats.text_count++;
                 header = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n";
             } 
         } else {
@@ -66,9 +67,10 @@ void *clientRequest(void *client_sockfd) {
         snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
         LEntry(&log_buffer, buffer);
         fclose(inputFile);
+        printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
     }
-
-
+    
+    statisticsPrint(stats);
     close(sock);
 
     return NULL;

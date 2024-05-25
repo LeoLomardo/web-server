@@ -7,7 +7,6 @@
 #include <time.h>
 #include <stdlib.h>
 
-#include "globais.h"
 
 //VALORES ARBITRÁRIOS
 #define MAX_ENTRIES 200
