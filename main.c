@@ -5,7 +5,6 @@
 // int image_count = 0;
 // int text_count = 0;
 
-
 int main(int argc, char *argv[]) {
 
     Command *command = extractCommandOptions(argc, argv);

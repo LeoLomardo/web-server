@@ -1,15 +1,19 @@
 #include "client.h"
 
 extern LogBuffer log_buffer;
-extern StatsInfo stats;
 
 void *clientRequest(void *client_sockfd) {
     time_t now = time(NULL);
     struct tm *t = localtime(&now);
     int sock = *(int *)client_sockfd;
     free(client_sockfd);
-
+    
     char buffer[1024];
+    StatsInfo stats;
+    stats.html_count = 0;
+    stats.image_count = 0;
+    stats.text_count = 0;
+
     int read_size = read(sock, buffer, sizeof(buffer) - 1);
     if (read_size > 0) {
         buffer[read_size] = '\0';
@@ -68,9 +72,11 @@ void *clientRequest(void *client_sockfd) {
         LEntry(&log_buffer, buffer);
         fclose(inputFile);
         printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
+
+      
     }
     
-    statisticsPrint(stats);
+    
     close(sock);
 
     return NULL;

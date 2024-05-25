@@ -1,7 +1,7 @@
 #include "server.h"
 
 LogBuffer log_buffer;
-StatsInfo stats;
+
 void serverRun(Command *command) {
     if (command == NULL) {
         fprintf(stderr, "[ERROR] Options are NULL\n");
@@ -9,8 +9,6 @@ void serverRun(Command *command) {
     }
 
     LBufferInit(&log_buffer, command->logFilename);
-    initStats(stats, command->statsFilename);
-
     pthread_t log_thread;
     if (pthread_create(&log_thread, NULL, LPrinfFile, &log_buffer) != 0) {
         fprintf(stderr, "[ERROR] Failed to create log writer thread\n");
@@ -68,6 +66,7 @@ void serverRun(Command *command) {
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
         printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
+        
     }
     printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
 }

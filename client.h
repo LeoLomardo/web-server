@@ -8,6 +8,8 @@
 
 #include "log.h"
 #include "statsInfo.h"
+#include "commandHandle.h"
+
 void *clientRequest(void *client_sockfd);
 
 #endif

@@ -13,7 +13,6 @@ typedef struct {
     int html_count;
     int image_count;
     int text_count;
-    char *statsFileName;
 } StatsInfo;
 
 void *statisticsPrint(StatsInfo stats);

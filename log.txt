@@ -1,900 +1,300 @@
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:25 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./index.html
-2024-05-25 18:08:26 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:26 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 21:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./index.html
-2024-05-25 18:08:27 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:27 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:27 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:27 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:28 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:28 200 OK: ./index.html
-2024-05-25 18:08:28 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:28 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:28 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:28 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:28 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:28 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:28 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:28 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:28 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:28 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:28 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:28 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:28 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:28 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:28 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:28 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:28 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:28 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:08:28 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:28 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:28 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:28 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:28 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:30 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:30 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:30 404 Not Found: ./erroHTML.html
-2024-05-25 18:08:30 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:30 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:08:30 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:08:30 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:08:30 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 21:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./index.html
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:06 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./index.html
-2024-05-25 18:25:07 200 OK: ./index.html
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./index.html
-2024-05-25 18:25:07 200 OK: ./index.html
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./index.html
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:25:07 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:07 404 Not Found: ./erroHTML.html
-2024-05-25 18:25:07 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:25:08 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:25:08 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:08 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:08 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:25:08 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./index.html
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:01 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:01 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./index.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:02 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:02 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:02 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:03 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:03 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 21:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 200 OK: ./hinoBotafogo.txt
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 200 OK: ./loccoAbreu.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 200 OK: ./index.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:03 404 Not Found: ./erroTEXTO.txt
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:03 404 Not Found: ./erroIMG.jpeg
-2024-05-25 18:28:04 404 Not Found: ./erroHTML.html
-2024-05-25 18:28:04 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:14 200 OK: ./index.html
+2024-05-25 19:27:14 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./index.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 22:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:15 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:15 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:15 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./index.html
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 200 OK: ./index.html
+2024-05-25 19:27:16 200 OK: ./index.html
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./index.html
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./index.html
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroIMG.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./index.html
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 404 Not Found: ./erroTEXTO.txt
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 404 Not Found: ./erroHTML.html
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./hinoBotafogo.txt
+2024-05-25 19:27:16 200 OK: ./loccoAbreu.jpeg
+2024-05-25 19:27:16 200 OK: ./index.html
