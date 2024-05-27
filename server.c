@@ -1,14 +1,23 @@
 #include "server.h"
 
 LogBuffer log_buffer;
+StatsInfo stats;
 
 void serverRun(Command *command) {
+
+    stats.html_count = 0;
+    stats.image_count = 0;
+    stats.text_count = 0;
+    
+    strcpy(stats.statsFileName, command->statsFilename);
+
     if (command == NULL) {
         fprintf(stderr, "[ERROR] Options are NULL\n");
         exit(EXIT_FAILURE);
     }
 
     LBufferInit(&log_buffer, command->logFilename);
+
     pthread_t log_thread;
     if (pthread_create(&log_thread, NULL, LPrinfFile, &log_buffer) != 0) {
         fprintf(stderr, "[ERROR] Failed to create log writer thread\n");
@@ -42,11 +51,13 @@ void serverRun(Command *command) {
     while (1) {
         struct sockaddr_in client_addr;
         socklen_t client_len = sizeof(client_addr);
+
         int *new_sockfd = malloc(sizeof(int));
         if (new_sockfd == NULL) {
             fprintf(stderr,"[CONSOLE] - Failed to allocate memory for new socket\n");
             continue;
         }
+
         *new_sockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
         if (*new_sockfd < 0) {
             fprintf(stderr,"[CONSOLE] - Accept failed\n");
@@ -63,10 +74,14 @@ void serverRun(Command *command) {
             free(new_sockfd);
             continue;
         }
+
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
+
         printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
-        
+        statisticsPrint(stats);
     }
     printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
+    
+
 }

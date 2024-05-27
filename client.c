@@ -1,18 +1,18 @@
 #include "client.h"
 
 extern LogBuffer log_buffer;
+extern Command *command;
+extern StatsInfo stats;
 
 void *clientRequest(void *client_sockfd) {
     time_t now = time(NULL);
     struct tm *t = localtime(&now);
+
     int sock = *(int *)client_sockfd;
     free(client_sockfd);
     
     char buffer[1024];
-    StatsInfo stats;
-    stats.html_count = 0;
-    stats.image_count = 0;
-    stats.text_count = 0;
+
 
     int read_size = read(sock, buffer, sizeof(buffer) - 1);
     if (read_size > 0) {
@@ -29,7 +29,9 @@ void *clientRequest(void *client_sockfd) {
     strcat(full_path, path);
 
     FILE *inputFile = fopen(full_path, "r+");
+
     printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
+
     if (inputFile == NULL) {
         char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
         write(sock, error_message, strlen(error_message));
@@ -40,23 +42,27 @@ void *clientRequest(void *client_sockfd) {
         char *header;
 
         if (ext != NULL) {
-            if (strcmp(ext, ".html") == 0) {
-                stats.html_count++;
-                header = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n";
-            } else if (strcmp(ext, ".jpg") == 0 || strcmp(ext, ".jpeg") == 0 || strcmp(ext, ".png") == 0) {
-                stats.image_count++;
-                if (strcmp(ext, ".jpg") == 0 || strcmp(ext, ".jpeg") == 0) {
+            ext = strrchr(full_path, '.');
+            if (ext != NULL) {
+                if (strcmp(ext, ".html") == 0) {
+                    stats.html_count++;
+                    header = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n";
+                } else if (strcmp(ext, ".jpg") == 0 || strcmp(ext, ".jpeg") == 0) {
+                    stats.image_count++;
                     header = "HTTP/1.1 200 OK\r\nContent-Type: image/jpeg\r\n\r\n";
-                } else {
+                } else if (strcmp(ext, ".png") == 0) {
+                    stats.image_count++;
                     header = "HTTP/1.1 200 OK\r\nContent-Type: image/png\r\n\r\n";
+                } else {
+                    stats.text_count++;
+                    header = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n";
                 }
             } else {
-                stats.text_count++;
-                header = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n";
-            } 
+                header = "HTTP/1.1 200 OK\r\nContent-Type: UNKNOWN/plain\r\n\r\n";
+            }
         } else {
             header = "HTTP/1.1 200 OK\r\nContent-Type: UNKNOWN/plain\r\n\r\n";
-        }   
+        }
 
         write(sock, header, strlen(header));
         printf("[SERVER] - %s", header);
@@ -72,10 +78,8 @@ void *clientRequest(void *client_sockfd) {
         LEntry(&log_buffer, buffer);
         fclose(inputFile);
         printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
-
       
     }
-    
     
     close(sock);
 

@@ -20,7 +20,6 @@ typedef struct {
     int count;
     int size;
     char *logFile;
-    char *statsFile;
     pthread_mutex_t mutex;
     pthread_cond_t cond;
 } LogBuffer;

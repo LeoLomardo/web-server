@@ -7,7 +7,7 @@ check_port() {
 if check_port 8080; then
     SERVER_URL="http://localhost:8080"
 else
-    SERVER_URL="http://localhost:3030"
+    SERVER_URL="http://localhost:3000"
 fi
 
 FILES=("index.html" "hinoBotafogo.txt" "loccoAbreu.jpeg" "erroHTML.html" "erroTEXTO.txt" "erroIMG.jpeg")

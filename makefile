@@ -6,7 +6,7 @@ CFLAGS = -Wall -pthread -pedantic
 DEPS = client.h commandHandle.h globals.h log.h main.h server.h statsInfo.h 
 
 # Arquivos objeto
-OBJ = client.o commandHandle.o logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o main.o server.o saveStats.o statsInit.o
+OBJ = client.o commandHandle.o logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o main.o server.o saveStats.o 
 
 # Regra padrão
 all: web_server

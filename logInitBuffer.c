@@ -12,7 +12,7 @@ void LBufferInit(LogBuffer *buffer, const char *filename) {
         exit(EXIT_FAILURE);
     }
     strcpy(buffer->logFile, filename);
-    //buffer->logFile[sizeof(buffer->logFile) - 1] = '\0';
+    buffer->logFile[sizeof(buffer->logFile) - 1] = '\0';
 
     pthread_mutex_init(&buffer->mutex, NULL);
     pthread_cond_init(&buffer->cond, NULL);
