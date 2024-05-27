@@ -1,18 +1,22 @@
 #include "server.h"
 
+
 LogBuffer log_buffer;
 StatsInfo stats;
 
 void serverRun(Command *command) {
+    if (command == NULL) {
+        fprintf(stderr, "[ERROR] Options are NULL\n");
+        exit(EXIT_FAILURE);
+    }
 
     stats.html_count = 0;
     stats.image_count = 0;
     stats.text_count = 0;
-    
     strcpy(stats.statsFileName, command->statsFilename);
 
-    if (command == NULL) {
-        fprintf(stderr, "[ERROR] Options are NULL\n");
+    if (pthread_mutex_init(&stats.stats_mutex, NULL) != 0) {
+        fprintf(stderr, "Failed to initialize mutex\n");
         exit(EXIT_FAILURE);
     }
 
@@ -26,7 +30,7 @@ void serverRun(Command *command) {
 
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) {
-        fprintf(stderr,"[CONSOLE] - Error creating socket\n");
+        fprintf(stderr, "[CONSOLE] - Error creating socket\n");
         exit(EXIT_FAILURE);
     }
 
@@ -37,12 +41,12 @@ void serverRun(Command *command) {
     server_addr.sin_port = htons(command->port);
 
     if (bind(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
-        fprintf(stderr,"[CONSOLE] - Bind failed\n");
+        fprintf(stderr, "[CONSOLE] - Bind failed\n");
         exit(EXIT_FAILURE);
     }
 
     if (listen(sockfd, 5) < 0) {
-        fprintf(stderr,"[CONSOLE] - Listen failed\n");
+        fprintf(stderr, "[CONSOLE] - Listen failed\n");
         exit(EXIT_FAILURE);
     }
 
@@ -54,13 +58,13 @@ void serverRun(Command *command) {
 
         int *new_sockfd = malloc(sizeof(int));
         if (new_sockfd == NULL) {
-            fprintf(stderr,"[CONSOLE] - Failed to allocate memory for new socket\n");
+            fprintf(stderr, "[CONSOLE] - Failed to allocate memory for new socket\n");
             continue;
         }
 
         *new_sockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
         if (*new_sockfd < 0) {
-            fprintf(stderr,"[CONSOLE] - Accept failed\n");
+            fprintf(stderr, "[CONSOLE] - Accept failed\n");
             free(new_sockfd);
             continue;
         }
@@ -79,9 +83,5 @@ void serverRun(Command *command) {
         pthread_detach(thread_id);
 
         printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
-        statisticsPrint(stats);
     }
-    printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
-    
-
 }

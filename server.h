@@ -16,8 +16,6 @@
 #include "client.h"
 #include "statsInfo.h"
 
-
-
 void serverRun(Command *command);
 
 #endif

@@ -1,25 +1,32 @@
-# Definições de compilador e flags
+PROJ_NAME = web_server
 CC = gcc
-CFLAGS = -Wall -pthread -pedantic
+CFLAGS = -Wall -Wextra -Werror -Wpedantic -O2 -g -pthread -fsanitize=address -fsanitize=undefined
 
-# Arquivos de cabeçalho
-DEPS = client.h commandHandle.h globals.h log.h main.h server.h statsInfo.h 
+
+C_SOURCE = client.c commandHandle.c logAddEntry.c logFree.c logInitBuffer.c logPrintFile.c main.c server.c saveStats.c
+H_SOURCE = client.h commandHandle.h log.h main.h server.h statsInfo.h
 
 # Arquivos objeto
-OBJ = client.o commandHandle.o logAddEntry.o logFree.o logInitBuffer.o logPrintFile.o main.o server.o saveStats.o 
+OBJ = $(C_SOURCE:.c=.o)
 
 # Regra padrão
-all: web_server
+all: $(PROJ_NAME)
 
-# Regras para compilar arquivos objeto
-%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-# Regra para compilar o executável
-web_server: $(OBJ)
+$(PROJ_NAME): $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-# Regra para limpar arquivos compilados
-.PHONY: clean
+%.o: %.c %.h
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+main.o: main.c $(H_SOURCE)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+# Limpa tudo, EXCETO web_server.o
 clean:
-	rm -f *.o web_server
+	rm -f $(filter-out web_server.o, $(OBJ))
+
+# Limpa TODOS arquivos .o 
+clean_all:
+	rm -f *.o $(PROJ_NAME) *~
+
+.PHONY: all clean clean_all

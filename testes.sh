@@ -10,7 +10,7 @@ else
     SERVER_URL="http://localhost:3000"
 fi
 
-FILES=("index.html" "hinoBotafogo.txt" "loccoAbreu.jpeg" "erroHTML.html" "erroTEXTO.txt" "erroIMG.jpeg")
+FILES=("index.html" "hinoBotafogo.txt" "loccoAbreu.jpeg" "erroHTML.html" "erroTEXTO.txt" "erroIMG.jpeg" "index_imagem.html")
 
 NUM_REQUESTS=50
 

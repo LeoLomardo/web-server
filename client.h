@@ -10,6 +10,9 @@
 #include "statsInfo.h"
 #include "commandHandle.h"
 
+extern StatsInfo stats;
+extern pthread_mutex_t stats_mutex;
+
 void *clientRequest(void *client_sockfd);
 
 #endif
