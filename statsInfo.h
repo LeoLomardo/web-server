@@ -6,16 +6,14 @@
 #include <signal.h>
 #include <string.h>
 
-#include "commandHandle.h"
-
-
 typedef struct {
     int html_count;
     int image_count;
     int text_count;
-    char statsFileName[256];
+    char *statsFileName;
     pthread_mutex_t stats_mutex;
 } StatsInfo;
 
 void *statisticsPrint(StatsInfo stats);
+
 #endif

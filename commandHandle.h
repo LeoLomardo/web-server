@@ -17,4 +17,5 @@ typedef struct command {
 
 Command *extractCommandOptions(int argc, char *argv[]);
 
+
 #endif

@@ -10,10 +10,13 @@ Command *extractCommandOptions(int argc, char *argv[]) {
     }
 
     command->background = 0;
-
+    command->logFilename[0] = '\0';
+    command->statsFilename[0] = '\0';
+    command->rootDir[0] = '\0';
     if (argc < 2) {
         printf("[CONSOLE] - Please start the server using the following the usage below.\n");
         printf("Usage: %s -p <port> -l <logfile> -s <statsfile> -r <rootdir> -b\n", argv[0]);
+        free(command);
         exit(EXIT_FAILURE);
     }
 
@@ -43,6 +46,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 break;
             default:
                 fprintf(stderr, "Unknown command.\n");
+                free(command);
                 exit(EXIT_FAILURE);
         }
     }

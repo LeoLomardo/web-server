@@ -5,7 +5,6 @@ void LBufferInit(LogBuffer *buffer, const char *filename) {
     buffer->end = 0;
     buffer->count = 0;
     buffer->size = LOG_SIZE;
-
     buffer->logFile = (char *)malloc(strlen(filename) + 1); 
     if (buffer->logFile == NULL) {
         fprintf(stderr,"Failed to allocate memory for logFile\n");
@@ -13,6 +12,7 @@ void LBufferInit(LogBuffer *buffer, const char *filename) {
     }
     strcpy(buffer->logFile, filename);
     buffer->logFile[sizeof(buffer->logFile) - 1] = '\0';
+    
 
     pthread_mutex_init(&buffer->mutex, NULL);
     pthread_cond_init(&buffer->cond, NULL);

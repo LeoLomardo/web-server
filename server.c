@@ -1,6 +1,5 @@
 #include "server.h"
 
-
 LogBuffer log_buffer;
 StatsInfo stats;
 
@@ -13,12 +12,13 @@ void serverRun(Command *command) {
     stats.html_count = 0;
     stats.image_count = 0;
     stats.text_count = 0;
-    strcpy(stats.statsFileName, command->statsFilename);
-
-    if (pthread_mutex_init(&stats.stats_mutex, NULL) != 0) {
-        fprintf(stderr, "Failed to initialize mutex\n");
+    stats.statsFileName = (char *)malloc(strlen(command->statsFilename) + 1);
+    if (stats.statsFileName == NULL) {
+        fprintf(stderr, "Failed to allocate memory for statsFileName\n");
         exit(EXIT_FAILURE);
     }
+    strcpy(stats.statsFileName, command->statsFilename);
+    stats.statsFileName[sizeof(stats.statsFileName)] = '\0';
 
     LBufferInit(&log_buffer, command->logFilename);
 
@@ -82,6 +82,6 @@ void serverRun(Command *command) {
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
 
-        printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
+        
     }
 }

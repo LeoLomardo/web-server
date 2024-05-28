@@ -1,13 +1,9 @@
 #include "log.h"
 
 void *LPrinfFile(void *arg) {
-    
     LogBuffer *buffer = (LogBuffer *)arg;
+
     FILE *logfile = fopen(buffer->logFile, "a+");
-    if (logfile == NULL) {
-        fprintf(stderr,"Failed to open log file\n");
-        exit(EXIT_FAILURE);
-    }
 
     while (1) {
         pthread_mutex_lock(&buffer->mutex);
@@ -21,8 +17,7 @@ void *LPrinfFile(void *arg) {
         buffer->count--;
         pthread_mutex_unlock(&buffer->mutex);
     }
-
+    free(buffer);
     fclose(logfile);
-
     return NULL;
 }

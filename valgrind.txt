@@ -1,0 +1,1109 @@
+////------------------------RODADA 1 ------------------------------------//////////////
+^C==97863== 
+==97863== Process terminating with default action of signal 2 (SIGINT)
+==97863==    at 0x49A2C7D: accept (accept.c:26)
+==97863==    by 0x10B003: serverRun (server.c:64)
+==97863==    by 0x10A307: main (main.c:8)
+==97863== 
+==97863== HEAP SUMMARY:
+==97863==     in use at exit: 57,829 bytes in 208 blocks
+==97863==   total heap usage: 2,145 allocs, 1,937 frees, 2,569,745 bytes allocated
+==97863== 
+==97863== Thread 1:
+==97863== 4 bytes in 1 blocks are definitely lost in loss record 1 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x10AFE9: serverRun (server.c:58)
+==97863==    by 0x10A307: main (main.c:8)
+==97863== 
+==97863== 8 bytes in 1 blocks are still reachable in loss record 2 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x10AC6B: LBufferInit (logInitBuffer.c:9)
+==97863==    by 0x10AE7D: serverRun (server.c:22)
+==97863==    by 0x10A307: main (main.c:8)
+==97863== 
+==97863== 15 bytes in 1 blocks are still reachable in loss record 3 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x493511F: strdup (strdup.c:42)
+==97863==    by 0x495EB9D: tzset_internal (tzset.c:402)
+==97863==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==97863==    by 0x10A462: clientRequest (client.c:10)
+==97863==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==97863==    by 0x49A0EE3: clone (clone.S:100)
+==97863== 
+==97863== 20 bytes in 1 blocks are still reachable in loss record 4 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x495E1FC: __tzstring_len (tzset.c:98)
+==97863==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==97863==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==97863==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==97863==    by 0x10A462: clientRequest (client.c:10)
+==97863==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==97863==    by 0x49A0EE3: clone (clone.S:100)
+==97863== 
+==97863== 40 bytes in 2 blocks are still reachable in loss record 5 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x495E196: __tzstring_len (tzset.c:98)
+==97863==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==97863==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==97863==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==97863==    by 0x10A462: clientRequest (client.c:10)
+==97863==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==97863==    by 0x49A0EE3: clone (clone.S:100)
+==97863== 
+==97863== 272 bytes in 1 blocks are possibly lost in loss record 6 of 13
+==97863==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==97863==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==97863==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==97863==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==97863==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==97863==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==97863==    by 0x10AE93: serverRun (server.c:25)
+==97863==    by 0x10A307: main (main.c:8)
+==97863== 
+==97863== 472 bytes in 1 blocks are still reachable in loss record 7 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x4908A68: __fopen_internal (iofopen.c:65)
+==97863==    by 0x10ACED: LPrinfFile (logPrintFile.c:6)
+==97863==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==97863==    by 0x49A0EE3: clone (clone.S:100)
+==97863== 
+==97863== 776 bytes in 1 blocks are still reachable in loss record 8 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x10A93D: extractCommandOptions (commandHandle.c:6)
+==97863==    by 0x10A2F8: main (main.c:7)
+==97863== 
+==97863== 862 bytes in 1 blocks are still reachable in loss record 9 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x495F309: __tzfile_read (tzfile.c:280)
+==97863==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==97863==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==97863==    by 0x10A462: clientRequest (client.c:10)
+==97863==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==97863==    by 0x49A0EE3: clone (clone.S:100)
+==97863== 
+==97863== 1,024 bytes in 1 blocks are still reachable in loss record 10 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==97863==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==97863==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==97863==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==97863==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==97863==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==97863==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==97863==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==97863==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==97863==    by 0x48E2CF2: printf (printf.c:33)
+==97863==    by 0x10AA54: extractCommandOptions (commandHandle.c:26)
+==97863==    by 0x10A2F8: main (main.c:7)
+==97863== 
+==97863== 1,088 bytes in 4 blocks are possibly lost in loss record 11 of 13
+==97863==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==97863==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==97863==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==97863==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==97863==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==97863==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==97863==    by 0x10B041: serverRun (server.c:74)
+==97863==    by 0x10A307: main (main.c:8)
+==97863== 
+==97863== 4,096 bytes in 1 blocks are still reachable in loss record 12 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==97863==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==97863==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==97863==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==97863==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==97863==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==97863==    by 0x4908EF9: fputs (iofputs.c:38)
+==97863==    by 0x10AD4C: LPrinfFile (logPrintFile.c:17)
+==97863==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==97863==    by 0x49A0EE3: clone (clone.S:100)
+==97863== 
+==97863== 49,152 bytes in 192 blocks are definitely lost in loss record 13 of 13
+==97863==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==97863==    by 0x10A677: clientRequest (client.c:65)
+==97863==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==97863==    by 0x49A0EE3: clone (clone.S:100)
+==97863== 
+==97863== LEAK SUMMARY:
+==97863==    definitely lost: 49,156 bytes in 193 blocks
+==97863==    indirectly lost: 0 bytes in 0 blocks
+==97863==      possibly lost: 1,360 bytes in 5 blocks
+==97863==    still reachable: 7,313 bytes in 10 blocks
+==97863==         suppressed: 0 bytes in 0 blocks
+==97863== 
+==97863== Use --track-origins=yes to see where uninitialised values come from
+==97863== For lists of detected and suppressed errors, rerun with: -s
+==97863== ERROR SUMMARY: 15212 errors from 8 contexts (suppressed: 0 from 0)
+
+////------------------------RODADA 2 ------------------------------------//////////////
+
+
+^C==104419== 
+==104419== Process terminating with default action of signal 2 (SIGINT)
+==104419==    at 0x49A2C7D: accept (accept.c:26)
+==104419==    by 0x10B033: serverRun (server.c:64)
+==104419==    by 0x10A30C: main (main.c:14)
+==104419== 
+==104419== HEAP SUMMARY:
+==104419==     in use at exit: 8,677 bytes in 16 blocks
+==104419==   total heap usage: 2,260 allocs, 2,244 frees, 2,679,576 bytes allocated
+==104419== 
+==104419== Thread 1:
+==104419== 4 bytes in 1 blocks are definitely lost in loss record 1 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x10B019: serverRun (server.c:58)
+==104419==    by 0x10A30C: main (main.c:14)
+==104419== 
+==104419== 8 bytes in 1 blocks are still reachable in loss record 2 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x10AC9B: LBufferInit (logInitBuffer.c:9)
+==104419==    by 0x10AEAD: serverRun (server.c:22)
+==104419==    by 0x10A30C: main (main.c:14)
+==104419== 
+==104419== 15 bytes in 1 blocks are still reachable in loss record 3 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x493511F: strdup (strdup.c:42)
+==104419==    by 0x495EB9D: tzset_internal (tzset.c:402)
+==104419==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==104419==    by 0x10A492: clientRequest (client.c:10)
+==104419==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==104419==    by 0x49A0EE3: clone (clone.S:100)
+==104419== 
+==104419== 20 bytes in 1 blocks are still reachable in loss record 4 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x495E1FC: __tzstring_len (tzset.c:98)
+==104419==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==104419==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==104419==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==104419==    by 0x10A492: clientRequest (client.c:10)
+==104419==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==104419==    by 0x49A0EE3: clone (clone.S:100)
+==104419== 
+==104419== 40 bytes in 2 blocks are still reachable in loss record 5 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x495E196: __tzstring_len (tzset.c:98)
+==104419==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==104419==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==104419==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==104419==    by 0x10A492: clientRequest (client.c:10)
+==104419==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==104419==    by 0x49A0EE3: clone (clone.S:100)
+==104419== 
+==104419== 272 bytes in 1 blocks are possibly lost in loss record 6 of 12
+==104419==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==104419==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==104419==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==104419==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==104419==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==104419==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==104419==    by 0x10AEC3: serverRun (server.c:25)
+==104419==    by 0x10A30C: main (main.c:14)
+==104419== 
+==104419== 472 bytes in 1 blocks are still reachable in loss record 7 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x4908A68: __fopen_internal (iofopen.c:65)
+==104419==    by 0x10AD1D: LPrinfFile (logPrintFile.c:6)
+==104419==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==104419==    by 0x49A0EE3: clone (clone.S:100)
+==104419== 
+==104419== 776 bytes in 1 blocks are still reachable in loss record 8 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x10A96D: extractCommandOptions (commandHandle.c:6)
+==104419==    by 0x10A2F8: main (main.c:7)
+==104419== 
+==104419== 862 bytes in 1 blocks are still reachable in loss record 9 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x495F309: __tzfile_read (tzfile.c:280)
+==104419==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==104419==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==104419==    by 0x10A492: clientRequest (client.c:10)
+==104419==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==104419==    by 0x49A0EE3: clone (clone.S:100)
+==104419== 
+==104419== 1,024 bytes in 1 blocks are still reachable in loss record 10 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==104419==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==104419==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==104419==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==104419==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==104419==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==104419==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==104419==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==104419==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==104419==    by 0x48E2CF2: printf (printf.c:33)
+==104419==    by 0x10AA84: extractCommandOptions (commandHandle.c:26)
+==104419==    by 0x10A2F8: main (main.c:7)
+==104419== 
+==104419== 1,088 bytes in 4 blocks are possibly lost in loss record 11 of 12
+==104419==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==104419==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==104419==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==104419==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==104419==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==104419==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==104419==    by 0x10B071: serverRun (server.c:74)
+==104419==    by 0x10A30C: main (main.c:14)
+==104419== 
+==104419== 4,096 bytes in 1 blocks are still reachable in loss record 12 of 12
+==104419==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==104419==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==104419==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==104419==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==104419==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==104419==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==104419==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==104419==    by 0x4908EF9: fputs (iofputs.c:38)
+==104419==    by 0x10AD7C: LPrinfFile (logPrintFile.c:17)
+==104419==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==104419==    by 0x49A0EE3: clone (clone.S:100)
+==104419== 
+==104419== LEAK SUMMARY:
+==104419==    definitely lost: 4 bytes in 1 blocks
+==104419==    indirectly lost: 0 bytes in 0 blocks
+==104419==      possibly lost: 1,360 bytes in 5 blocks
+==104419==    still reachable: 7,313 bytes in 10 blocks
+==104419==         suppressed: 0 bytes in 0 blocks
+==104419== 
+==104419== Use --track-origins=yes to see where uninitialised values come from
+==104419== For lists of detected and suppressed errors, rerun with: -s
+==104419== ERROR SUMMARY: 12043 errors from 7 contexts (suppressed: 0 from 0)
+//--------------------------------------------RODADA 3 ------------------------------------ //
+^C==110879== 
+==110879== Process terminating with default action of signal 2 (SIGINT)
+==110879==    at 0x49A2C7D: accept (accept.c:26)
+==110879==    by 0x10B053: serverRun (server.c:64)
+==110879==    by 0x10A30C: main (main.c:14)
+==110879== 
+==110879== HEAP SUMMARY:
+==110879==     in use at exit: 8,669 bytes in 15 blocks
+==110879==   total heap usage: 2,224 allocs, 2,209 frees, 2,669,784 bytes allocated
+==110879== 
+==110879== Thread 1:
+==110879== 4 bytes in 1 blocks are definitely lost in loss record 1 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x10B039: serverRun (server.c:58)
+==110879==    by 0x10A30C: main (main.c:14)
+==110879== 
+==110879== 15 bytes in 1 blocks are still reachable in loss record 2 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x493511F: strdup (strdup.c:42)
+==110879==    by 0x495EB9D: tzset_internal (tzset.c:402)
+==110879==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==110879==    by 0x10A492: clientRequest (client.c:10)
+==110879==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==110879==    by 0x49A0EE3: clone (clone.S:100)
+==110879== 
+==110879== 20 bytes in 1 blocks are still reachable in loss record 3 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x495E1FC: __tzstring_len (tzset.c:98)
+==110879==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==110879==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==110879==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==110879==    by 0x10A492: clientRequest (client.c:10)
+==110879==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==110879==    by 0x49A0EE3: clone (clone.S:100)
+==110879== 
+==110879== 40 bytes in 2 blocks are still reachable in loss record 4 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x495E196: __tzstring_len (tzset.c:98)
+==110879==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==110879==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==110879==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==110879==    by 0x10A492: clientRequest (client.c:10)
+==110879==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==110879==    by 0x49A0EE3: clone (clone.S:100)
+==110879== 
+==110879== 272 bytes in 1 blocks are possibly lost in loss record 5 of 11
+==110879==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==110879==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==110879==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==110879==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==110879==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==110879==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==110879==    by 0x10AEE3: serverRun (server.c:25)
+==110879==    by 0x10A30C: main (main.c:14)
+==110879== 
+==110879== 472 bytes in 1 blocks are still reachable in loss record 6 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x4908A68: __fopen_internal (iofopen.c:65)
+==110879==    by 0x10AD3D: LPrinfFile (logPrintFile.c:6)
+==110879==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==110879==    by 0x49A0EE3: clone (clone.S:100)
+==110879== 
+==110879== 776 bytes in 1 blocks are still reachable in loss record 7 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x10A96D: extractCommandOptions (commandHandle.c:6)
+==110879==    by 0x10A2F8: main (main.c:7)
+==110879== 
+==110879== 862 bytes in 1 blocks are still reachable in loss record 8 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x495F309: __tzfile_read (tzfile.c:280)
+==110879==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==110879==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==110879==    by 0x10A492: clientRequest (client.c:10)
+==110879==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==110879==    by 0x49A0EE3: clone (clone.S:100)
+==110879== 
+==110879== 1,024 bytes in 1 blocks are still reachable in loss record 9 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==110879==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==110879==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==110879==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==110879==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==110879==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==110879==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==110879==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==110879==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==110879==    by 0x48E2CF2: printf (printf.c:33)
+==110879==    by 0x10AA84: extractCommandOptions (commandHandle.c:26)
+==110879==    by 0x10A2F8: main (main.c:7)
+==110879== 
+==110879== 1,088 bytes in 4 blocks are possibly lost in loss record 10 of 11
+==110879==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==110879==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==110879==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==110879==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==110879==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==110879==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==110879==    by 0x10B091: serverRun (server.c:74)
+==110879==    by 0x10A30C: main (main.c:14)
+==110879== 
+==110879== 4,096 bytes in 1 blocks are still reachable in loss record 11 of 11
+==110879==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==110879==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==110879==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==110879==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==110879==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==110879==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==110879==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==110879==    by 0x4908EF9: fputs (iofputs.c:38)
+==110879==    by 0x10AD9C: LPrinfFile (logPrintFile.c:17)
+==110879==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==110879==    by 0x49A0EE3: clone (clone.S:100)
+==110879== 
+==110879== LEAK SUMMARY:
+==110879==    definitely lost: 4 bytes in 1 blocks
+==110879==    indirectly lost: 0 bytes in 0 blocks
+==110879==      possibly lost: 1,360 bytes in 5 blocks
+==110879==    still reachable: 7,305 bytes in 9 blocks
+==110879==         suppressed: 0 bytes in 0 blocks
+==110879== 
+==110879== Use --track-origins=yes to see where uninitialised values come from
+==110879== For lists of detected and suppressed errors, rerun with: -s
+==110879== ERROR SUMMARY: 17798 errors from 8 contexts (suppressed: 0 from 0)
+
+////------------------------RODADA 4 ------------------------------------//////////////
+
+^C==131244== 
+==131244== Process terminating with default action of signal 2 (SIGINT)
+==131244==    at 0x49A2C7D: accept (accept.c:26)
+==131244==    by 0x10B03B: serverRun (server.c:64)
+==131244==    by 0x10A31C: main (main.c:14)
+==131244== 
+==131244== HEAP SUMMARY:
+==131244==     in use at exit: 8,687 bytes in 17 blocks
+==131244==   total heap usage: 2,243 allocs, 2,226 frees, 2,674,690 bytes allocated
+==131244== 
+==131244== Thread 1:
+==131244== 4 bytes in 1 blocks are definitely lost in loss record 1 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x10B021: serverRun (server.c:58)
+==131244==    by 0x10A31C: main (main.c:14)
+==131244== 
+==131244== 8 bytes in 1 blocks are still reachable in loss record 2 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x10ACBB: LBufferInit (logInitBuffer.c:8)
+==131244==    by 0x10AE8A: serverRun (server.c:22)
+==131244==    by 0x10A31C: main (main.c:14)
+==131244== 
+==131244== 10 bytes in 1 blocks are still reachable in loss record 3 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x10AE59: serverRun (server.c:15)
+==131244==    by 0x10A31C: main (main.c:14)
+==131244== 
+==131244== 15 bytes in 1 blocks are still reachable in loss record 4 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x493511F: strdup (strdup.c:42)
+==131244==    by 0x495EB9D: tzset_internal (tzset.c:402)
+==131244==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==131244==    by 0x10A4A2: clientRequest (client.c:10)
+==131244==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==131244==    by 0x49A0EE3: clone (clone.S:100)
+==131244== 
+==131244== 20 bytes in 1 blocks are still reachable in loss record 5 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x495E1FC: __tzstring_len (tzset.c:98)
+==131244==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==131244==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==131244==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==131244==    by 0x10A4A2: clientRequest (client.c:10)
+==131244==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==131244==    by 0x49A0EE3: clone (clone.S:100)
+==131244== 
+==131244== 40 bytes in 2 blocks are still reachable in loss record 6 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x495E196: __tzstring_len (tzset.c:98)
+==131244==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==131244==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==131244==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==131244==    by 0x10A4A2: clientRequest (client.c:10)
+==131244==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==131244==    by 0x49A0EE3: clone (clone.S:100)
+==131244== 
+==131244== 272 bytes in 1 blocks are possibly lost in loss record 7 of 13
+==131244==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==131244==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==131244==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==131244==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==131244==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==131244==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==131244==    by 0x10AEA0: serverRun (server.c:25)
+==131244==    by 0x10A31C: main (main.c:14)
+==131244== 
+==131244== 472 bytes in 1 blocks are still reachable in loss record 8 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x4908A68: __fopen_internal (iofopen.c:65)
+==131244==    by 0x10AD52: LPrinfFile (logPrintFile.c:6)
+==131244==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==131244==    by 0x49A0EE3: clone (clone.S:100)
+==131244== 
+==131244== 776 bytes in 1 blocks are still reachable in loss record 9 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x10A98D: extractCommandOptions (commandHandle.c:6)
+==131244==    by 0x10A308: main (main.c:7)
+==131244== 
+==131244== 862 bytes in 1 blocks are still reachable in loss record 10 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x495F309: __tzfile_read (tzfile.c:280)
+==131244==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==131244==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==131244==    by 0x10A4A2: clientRequest (client.c:10)
+==131244==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==131244==    by 0x49A0EE3: clone (clone.S:100)
+==131244== 
+==131244== 1,024 bytes in 1 blocks are still reachable in loss record 11 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==131244==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==131244==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==131244==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==131244==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==131244==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==131244==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==131244==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==131244==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==131244==    by 0x48E2CF2: printf (printf.c:33)
+==131244==    by 0x10AAA4: extractCommandOptions (commandHandle.c:26)
+==131244==    by 0x10A308: main (main.c:7)
+==131244== 
+==131244== 1,088 bytes in 4 blocks are possibly lost in loss record 12 of 13
+==131244==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==131244==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==131244==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==131244==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==131244==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==131244==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==131244==    by 0x10B079: serverRun (server.c:74)
+==131244==    by 0x10A31C: main (main.c:14)
+==131244== 
+==131244== 4,096 bytes in 1 blocks are still reachable in loss record 13 of 13
+==131244==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==131244==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==131244==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==131244==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==131244==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==131244==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==131244==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==131244==    by 0x4908EF9: fputs (iofputs.c:38)
+==131244==    by 0x10AD9C: LPrinfFile (logPrintFile.c:13)
+==131244==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==131244==    by 0x49A0EE3: clone (clone.S:100)
+==131244== 
+==131244== LEAK SUMMARY:
+==131244==    definitely lost: 4 bytes in 1 blocks
+==131244==    indirectly lost: 0 bytes in 0 blocks
+==131244==      possibly lost: 1,360 bytes in 5 blocks
+==131244==    still reachable: 7,323 bytes in 11 blocks
+==131244==         suppressed: 0 bytes in 0 blocks
+==131244== 
+==131244== Use --track-origins=yes to see where uninitialised values come from
+==131244== For lists of detected and suppressed errors, rerun with: -s
+==131244== ERROR SUMMARY: 14726 errors from 7 contexts (suppressed: 0 from 0)
+
+////------------------------RODADA 5 ------------------------------------//////////////
+
+^C==137690== 
+==137690== Process terminating with default action of signal 2 (SIGINT)
+==137690==    at 0x49A2C7D: accept (accept.c:26)
+==137690==    by 0x10B04B: serverRun (server.c:64)
+==137690==    by 0x10A31C: main (main.c:14)
+==137690== 
+==137690== HEAP SUMMARY:
+==137690==     in use at exit: 8,677 bytes in 16 blocks
+==137690==   total heap usage: 2,185 allocs, 2,509 frees, 2,610,391 bytes allocated
+==137690== 
+==137690== Thread 1:
+==137690== 4 bytes in 1 blocks are definitely lost in loss record 1 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x10B031: serverRun (server.c:58)
+==137690==    by 0x10A31C: main (main.c:14)
+==137690== 
+==137690== 8 bytes in 1 blocks are still reachable in loss record 2 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x10ACCB: LBufferInit (logInitBuffer.c:8)
+==137690==    by 0x10AE9A: serverRun (server.c:22)
+==137690==    by 0x10A31C: main (main.c:14)
+==137690== 
+==137690== 15 bytes in 1 blocks are still reachable in loss record 3 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x493511F: strdup (strdup.c:42)
+==137690==    by 0x495EB9D: tzset_internal (tzset.c:402)
+==137690==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==137690==    by 0x10A4A2: clientRequest (client.c:10)
+==137690==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==137690==    by 0x49A0EE3: clone (clone.S:100)
+==137690== 
+==137690== 20 bytes in 1 blocks are still reachable in loss record 4 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x495E1FC: __tzstring_len (tzset.c:98)
+==137690==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==137690==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==137690==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==137690==    by 0x10A4A2: clientRequest (client.c:10)
+==137690==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==137690==    by 0x49A0EE3: clone (clone.S:100)
+==137690== 
+==137690== 40 bytes in 2 blocks are still reachable in loss record 5 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x495E196: __tzstring_len (tzset.c:98)
+==137690==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==137690==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==137690==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==137690==    by 0x10A4A2: clientRequest (client.c:10)
+==137690==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==137690==    by 0x49A0EE3: clone (clone.S:100)
+==137690== 
+==137690== 272 bytes in 1 blocks are possibly lost in loss record 6 of 12
+==137690==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==137690==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==137690==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==137690==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==137690==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==137690==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==137690==    by 0x10AEB0: serverRun (server.c:25)
+==137690==    by 0x10A31C: main (main.c:14)
+==137690== 
+==137690== 472 bytes in 1 blocks are still reachable in loss record 7 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x4908A68: __fopen_internal (iofopen.c:65)
+==137690==    by 0x10AD62: LPrinfFile (logPrintFile.c:6)
+==137690==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==137690==    by 0x49A0EE3: clone (clone.S:100)
+==137690== 
+==137690== 776 bytes in 1 blocks are still reachable in loss record 8 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x10A98D: extractCommandOptions (commandHandle.c:6)
+==137690==    by 0x10A308: main (main.c:7)
+==137690== 
+==137690== 862 bytes in 1 blocks are still reachable in loss record 9 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x495F309: __tzfile_read (tzfile.c:280)
+==137690==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==137690==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==137690==    by 0x10A4A2: clientRequest (client.c:10)
+==137690==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==137690==    by 0x49A0EE3: clone (clone.S:100)
+==137690== 
+==137690== 1,024 bytes in 1 blocks are still reachable in loss record 10 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==137690==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==137690==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==137690==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==137690==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==137690==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==137690==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==137690==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==137690==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==137690==    by 0x48E2CF2: printf (printf.c:33)
+==137690==    by 0x10AAA4: extractCommandOptions (commandHandle.c:26)
+==137690==    by 0x10A308: main (main.c:7)
+==137690== 
+==137690== 1,088 bytes in 4 blocks are possibly lost in loss record 11 of 12
+==137690==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==137690==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==137690==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==137690==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==137690==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==137690==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==137690==    by 0x10B089: serverRun (server.c:74)
+==137690==    by 0x10A31C: main (main.c:14)
+==137690== 
+==137690== 4,096 bytes in 1 blocks are still reachable in loss record 12 of 12
+==137690==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==137690==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==137690==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==137690==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==137690==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==137690==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==137690==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==137690==    by 0x4908EF9: fputs (iofputs.c:38)
+==137690==    by 0x10ADAC: LPrinfFile (logPrintFile.c:13)
+==137690==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==137690==    by 0x49A0EE3: clone (clone.S:100)
+==137690== 
+==137690== LEAK SUMMARY:
+==137690==    definitely lost: 4 bytes in 1 blocks
+==137690==    indirectly lost: 0 bytes in 0 blocks
+==137690==      possibly lost: 1,360 bytes in 5 blocks
+==137690==    still reachable: 7,313 bytes in 10 blocks
+==137690==         suppressed: 0 bytes in 0 blocks
+==137690== 
+==137690== Use --track-origins=yes to see where uninitialised values come from
+==137690== For lists of detected and suppressed errors, rerun with: -s
+==137690== ERROR SUMMARY: 14162 errors from 9 contexts (suppressed: 0 from 0)
+//---------------------------------------- RODADA 7 ------------------------------------------------ //
+
+^C==145368== 
+==145368== Process terminating with default action of signal 2 (SIGINT)
+==145368==    at 0x49A2C7D: accept (accept.c:26)
+==145368==    by 0x10B04B: serverRun (server.c:64)
+==145368==    by 0x10A31C: main (main.c:14)
+==145368== 
+==145368== HEAP SUMMARY:
+==145368==     in use at exit: 8,677 bytes in 16 blocks
+==145368==   total heap usage: 2,205 allocs, 2,531 frees, 2,630,845 bytes allocated
+==145368== 
+==145368== Searching for pointers to 16 not-freed blocks
+==145368== Checked 42,418,696 bytes
+==145368== 
+==145368== Thread 1:
+==145368== 4 bytes in 1 blocks are definitely lost in loss record 1 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x10B031: serverRun (server.c:58)
+==145368==    by 0x10A31C: main (main.c:14)
+==145368== 
+==145368== 8 bytes in 1 blocks are still reachable in loss record 2 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x10ACCB: LBufferInit (logInitBuffer.c:8)
+==145368==    by 0x10AE9A: serverRun (server.c:22)
+==145368==    by 0x10A31C: main (main.c:14)
+==145368== 
+==145368== 15 bytes in 1 blocks are still reachable in loss record 3 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x493511F: strdup (strdup.c:42)
+==145368==    by 0x495EB9D: tzset_internal (tzset.c:402)
+==145368==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==145368==    by 0x10A4A2: clientRequest (client.c:10)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368== 
+==145368== 20 bytes in 1 blocks are still reachable in loss record 4 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x495E1FC: __tzstring_len (tzset.c:98)
+==145368==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==145368==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==145368==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==145368==    by 0x10A4A2: clientRequest (client.c:10)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368== 
+==145368== 40 bytes in 2 blocks are still reachable in loss record 5 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x495E196: __tzstring_len (tzset.c:98)
+==145368==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==145368==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==145368==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==145368==    by 0x10A4A2: clientRequest (client.c:10)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368== 
+==145368== 272 bytes in 1 blocks are possibly lost in loss record 6 of 12
+==145368==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==145368==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==145368==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==145368==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==145368==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==145368==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==145368==    by 0x10AEB0: serverRun (server.c:25)
+==145368==    by 0x10A31C: main (main.c:14)
+==145368== 
+==145368== 472 bytes in 1 blocks are still reachable in loss record 7 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x4908A68: __fopen_internal (iofopen.c:65)
+==145368==    by 0x10AD62: LPrinfFile (logPrintFile.c:6)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368== 
+==145368== 776 bytes in 1 blocks are still reachable in loss record 8 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x10A98D: extractCommandOptions (commandHandle.c:6)
+==145368==    by 0x10A308: main (main.c:7)
+==145368== 
+==145368== 862 bytes in 1 blocks are still reachable in loss record 9 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x495F309: __tzfile_read (tzfile.c:280)
+==145368==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==145368==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==145368==    by 0x10A4A2: clientRequest (client.c:10)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368== 
+==145368== 1,024 bytes in 1 blocks are still reachable in loss record 10 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==145368==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==145368==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==145368==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==145368==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==145368==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==145368==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==145368==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==145368==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==145368==    by 0x48E2CF2: printf (printf.c:33)
+==145368==    by 0x10AAA4: extractCommandOptions (commandHandle.c:26)
+==145368==    by 0x10A308: main (main.c:7)
+==145368== 
+==145368== 1,088 bytes in 4 blocks are possibly lost in loss record 11 of 12
+==145368==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==145368==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==145368==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==145368==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==145368==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==145368==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==145368==    by 0x10B089: serverRun (server.c:74)
+==145368==    by 0x10A31C: main (main.c:14)
+==145368== 
+==145368== 4,096 bytes in 1 blocks are still reachable in loss record 12 of 12
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==145368==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==145368==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==145368==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==145368==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==145368==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==145368==    by 0x4908EF9: fputs (iofputs.c:38)
+==145368==    by 0x10ADAC: LPrinfFile (logPrintFile.c:13)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368== 
+==145368== LEAK SUMMARY:
+==145368==    definitely lost: 4 bytes in 1 blocks
+==145368==    indirectly lost: 0 bytes in 0 blocks
+==145368==      possibly lost: 1,360 bytes in 5 blocks
+==145368==    still reachable: 7,313 bytes in 10 blocks
+==145368==         suppressed: 0 bytes in 0 blocks
+==145368== 
+==145368== ERROR SUMMARY: 14390 errors from 9 contexts (suppressed: 0 from 0)
+==145368== 
+==145368== 144 errors in context 1 of 9:
+==145368== Thread 8:
+==145368== Syscall param write(buf) points to uninitialised byte(s)
+==145368==    at 0x499453D: __libc_write (write.c:26)
+==145368==    by 0x499453D: write (write.c:24)
+==145368==    by 0x4915CA4: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1181)
+==145368==    by 0x4913E3C: new_do_write (fileops.c:449)
+==145368==    by 0x4914CE0: _IO_do_write@@GLIBC_2.2.5 (fileops.c:426)
+==145368==    by 0x491525A: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:784)
+==145368==    by 0x490A9A9: puts (ioputs.c:41)
+==145368==    by 0x10A73D: clientRequest (client.c:80)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Address 0x4a7a390 is 0 bytes inside a block of size 1,024 alloc'd
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==145368==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==145368==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==145368==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==145368==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==145368==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==145368==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==145368==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==145368==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==145368==    by 0x48E2CF2: printf (printf.c:33)
+==145368==    by 0x10AAA4: extractCommandOptions (commandHandle.c:26)
+==145368==    by 0x10A308: main (main.c:7)
+==145368==  Uninitialised value was created by a stack allocation
+==145368==    at 0x10A46A: clientRequest (client.c:8)
+==145368== 
+==145368== 
+==145368== 342 errors in context 2 of 9:
+==145368== Thread 4:
+==145368== Invalid free() / delete / delete[] / realloc()
+==145368==    at 0x48458CF: free (vg_replace_malloc.c:989)
+==145368==    by 0x10B1C2: statisticsPrint (saveStats.c:8)
+==145368==    by 0x10A810: clientRequest (client.c:91)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Address 0x4a7a7d0 is 0 bytes inside a block of size 10 free'd
+==145368==    at 0x48458CF: free (vg_replace_malloc.c:989)
+==145368==    by 0x10B1C2: statisticsPrint (saveStats.c:8)
+==145368==    by 0x10A810: clientRequest (client.c:91)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Block was alloc'd at
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x10AE69: serverRun (server.c:15)
+==145368==    by 0x10A31C: main (main.c:14)
+==145368== 
+==145368== 
+==145368== 342 errors in context 3 of 9:
+==145368== Syscall param openat(filename) points to unaddressable byte(s)
+==145368==    at 0x49930B5: open (open64.c:41)
+==145368==    by 0x49145FE: _IO_file_open (fileops.c:188)
+==145368==    by 0x49147B4: _IO_file_fopen@@GLIBC_2.2.5 (fileops.c:281)
+==145368==    by 0x4908AC7: __fopen_internal (iofopen.c:75)
+==145368==    by 0x10B199: statisticsPrint (saveStats.c:5)
+==145368==    by 0x10A810: clientRequest (client.c:91)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Address 0x4a7a7d0 is 0 bytes inside a block of size 10 free'd
+==145368==    at 0x48458CF: free (vg_replace_malloc.c:989)
+==145368==    by 0x10B1C2: statisticsPrint (saveStats.c:8)
+==145368==    by 0x10A810: clientRequest (client.c:91)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Block was alloc'd at
+==145368==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==145368==    by 0x10AE69: serverRun (server.c:15)
+==145368==    by 0x10A31C: main (main.c:14)
+==145368== 
+==145368== 
+==145368== 2253 errors in context 4 of 9:
+==145368== Thread 8:
+==145368== Conditional jump or move depends on uninitialised value(s)
+==145368==    at 0x49151A9: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:783)
+==145368==    by 0x4917364: _IO_default_xsputn (genops.c:399)
+==145368==    by 0x4917364: _IO_default_xsputn (genops.c:370)
+==145368==    by 0x4915E27: _IO_new_file_xsputn (fileops.c:1265)
+==145368==    by 0x4915E27: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==145368==    by 0x490A849: puts (ioputs.c:40)
+==145368==    by 0x10A73D: clientRequest (client.c:80)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Uninitialised value was created by a stack allocation
+==145368==    at 0x10A46A: clientRequest (client.c:8)
+==145368== 
+==145368== 
+==145368== 2300 errors in context 5 of 9:
+==145368== Conditional jump or move depends on uninitialised value(s)
+==145368==    at 0x4915E3F: _IO_new_file_xsputn (fileops.c:1219)
+==145368==    by 0x4915E3F: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==145368==    by 0x490A849: puts (ioputs.c:40)
+==145368==    by 0x10A73D: clientRequest (client.c:80)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Uninitialised value was created by a stack allocation
+==145368==    at 0x10A46A: clientRequest (client.c:8)
+==145368== 
+==145368== 
+==145368== 9006 errors in context 6 of 9:
+==145368== Thread 3:
+==145368== Conditional jump or move depends on uninitialised value(s)
+==145368==    at 0x484B9B8: strlen (vg_replace_strmem.c:505)
+==145368==    by 0x490A7EC: puts (ioputs.c:35)
+==145368==    by 0x10A73D: clientRequest (client.c:80)
+==145368==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==145368==    by 0x49A0EE3: clone (clone.S:100)
+==145368==  Uninitialised value was created by a stack allocation
+==145368==    at 0x10A46A: clientRequest (client.c:8)
+==145368== 
+==145368== ERROR SUMMARY: 14390 errors from 9 contexts (suppressed: 0 from 0)
+//---------------------------- ULTIMA RODADA DE HOHE ----------------------------------///
+
+^C==165821== 
+==165821== Process terminating with default action of signal 2 (SIGINT)
+==165821==    at 0x49A2C7D: accept (accept.c:26)
+==165821==    by 0x10B06B: serverRun (server.c:65)
+==165821==    by 0x10A31C: main (main.c:14)
+==165821== 
+==165821== HEAP SUMMARY:
+==165821==     in use at exit: 8,687 bytes in 17 blocks
+==165821==   total heap usage: 739 allocs, 722 frees, 960,052 bytes allocated
+==165821== 
+==165821== Searching for pointers to 17 not-freed blocks
+==165821== Checked 42,418,288 bytes
+==165821== 
+==165821== Thread 1:
+==165821== 4 bytes in 1 blocks are definitely lost in loss record 1 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x10B051: serverRun (server.c:59)
+==165821==    by 0x10A31C: main (main.c:14)
+==165821== 
+==165821== 8 bytes in 1 blocks are still reachable in loss record 2 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x10ACEB: LBufferInit (logInitBuffer.c:8)
+==165821==    by 0x10AEBE: serverRun (server.c:23)
+==165821==    by 0x10A31C: main (main.c:14)
+==165821== 
+==165821== 10 bytes in 1 blocks are still reachable in loss record 3 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x10AE89: serverRun (server.c:15)
+==165821==    by 0x10A31C: main (main.c:14)
+==165821== 
+==165821== 15 bytes in 1 blocks are still reachable in loss record 4 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x493511F: strdup (strdup.c:42)
+==165821==    by 0x495EB9D: tzset_internal (tzset.c:402)
+==165821==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==165821==    by 0x10A4A2: clientRequest (client.c:10)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821== 
+==165821== 20 bytes in 1 blocks are still reachable in loss record 5 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x495E1FC: __tzstring_len (tzset.c:98)
+==165821==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==165821==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==165821==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==165821==    by 0x10A4A2: clientRequest (client.c:10)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821== 
+==165821== 40 bytes in 2 blocks are still reachable in loss record 6 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x495E196: __tzstring_len (tzset.c:98)
+==165821==    by 0x495FA58: __tzfile_read (tzfile.c:413)
+==165821==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==165821==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==165821==    by 0x10A4A2: clientRequest (client.c:10)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821== 
+==165821== 272 bytes in 1 blocks are possibly lost in loss record 7 of 13
+==165821==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==165821==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==165821==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==165821==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==165821==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==165821==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==165821==    by 0x10AED4: serverRun (server.c:26)
+==165821==    by 0x10A31C: main (main.c:14)
+==165821== 
+==165821== 472 bytes in 1 blocks are still reachable in loss record 8 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x4908A68: __fopen_internal (iofopen.c:65)
+==165821==    by 0x10AD82: LPrinfFile (logPrintFile.c:6)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821== 
+==165821== 776 bytes in 1 blocks are still reachable in loss record 9 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x10A98D: extractCommandOptions (commandHandle.c:6)
+==165821==    by 0x10A308: main (main.c:7)
+==165821== 
+==165821== 862 bytes in 1 blocks are still reachable in loss record 10 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x495F309: __tzfile_read (tzfile.c:280)
+==165821==    by 0x495EBB0: tzset_internal (tzset.c:405)
+==165821==    by 0x495EDAA: __tz_convert (tzset.c:577)
+==165821==    by 0x10A4A2: clientRequest (client.c:10)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821== 
+==165821== 1,024 bytes in 1 blocks are still reachable in loss record 11 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==165821==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==165821==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==165821==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==165821==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==165821==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==165821==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==165821==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==165821==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==165821==    by 0x48E2CF2: printf (printf.c:33)
+==165821==    by 0x10AAB4: extractCommandOptions (commandHandle.c:29)
+==165821==    by 0x10A308: main (main.c:7)
+==165821== 
+==165821== 1,088 bytes in 4 blocks are possibly lost in loss record 12 of 13
+==165821==    at 0x4849BF3: calloc (vg_replace_malloc.c:1675)
+==165821==    by 0x4011A13: calloc (rtld-malloc.h:44)
+==165821==    by 0x4011A13: allocate_dtv (dl-tls.c:370)
+==165821==    by 0x4012491: _dl_allocate_tls (dl-tls.c:629)
+==165821==    by 0x491E964: allocate_stack (allocatestack.c:429)
+==165821==    by 0x491E964: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+==165821==    by 0x10B0A9: serverRun (server.c:75)
+==165821==    by 0x10A31C: main (main.c:14)
+==165821== 
+==165821== 4,096 bytes in 1 blocks are still reachable in loss record 13 of 13
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==165821==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==165821==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==165821==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==165821==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==165821==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==165821==    by 0x4908EF9: fputs (iofputs.c:38)
+==165821==    by 0x10ADCC: LPrinfFile (logPrintFile.c:13)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821== 
+==165821== LEAK SUMMARY:
+==165821==    definitely lost: 4 bytes in 1 blocks
+==165821==    indirectly lost: 0 bytes in 0 blocks
+==165821==      possibly lost: 1,360 bytes in 5 blocks
+==165821==    still reachable: 7,323 bytes in 11 blocks
+==165821==         suppressed: 0 bytes in 0 blocks
+==165821== 
+==165821== ERROR SUMMARY: 1048 errors from 6 contexts (suppressed: 0 from 0)
+==165821== 
+==165821== 27 errors in context 1 of 6:
+==165821== Thread 4:
+==165821== Syscall param write(buf) points to uninitialised byte(s)
+==165821==    at 0x499453D: __libc_write (write.c:26)
+==165821==    by 0x499453D: write (write.c:24)
+==165821==    by 0x4915CA4: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1181)
+==165821==    by 0x4913E3C: new_do_write (fileops.c:449)
+==165821==    by 0x4914CE0: _IO_do_write@@GLIBC_2.2.5 (fileops.c:426)
+==165821==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==165821==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==165821==    by 0x490A849: puts (ioputs.c:40)
+==165821==    by 0x10A73D: clientRequest (client.c:80)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821==  Address 0x4a7a4be is 302 bytes inside a block of size 1,024 alloc'd
+==165821==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==165821==    by 0x4907F13: _IO_file_doallocate (filedoalloc.c:101)
+==165821==    by 0x4917213: _IO_doallocbuf (genops.c:347)
+==165821==    by 0x4917213: _IO_doallocbuf (genops.c:342)
+==165821==    by 0x49152E7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+==165821==    by 0x4915DE7: _IO_new_file_xsputn (fileops.c:1244)
+==165821==    by 0x4915DE7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==165821==    by 0x48E3548: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+==165821==    by 0x48E360B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+==165821==    by 0x48EEE0B: __vfprintf_internal (vfprintf-internal.c:1545)
+==165821==    by 0x48E2CF2: printf (printf.c:33)
+==165821==    by 0x10AAB4: extractCommandOptions (commandHandle.c:29)
+==165821==    by 0x10A308: main (main.c:7)
+==165821==  Uninitialised value was created by a stack allocation
+==165821==    at 0x10A46A: clientRequest (client.c:8)
+==165821== 
+==165821== 
+==165821== 27 errors in context 2 of 6:
+==165821== Conditional jump or move depends on uninitialised value(s)
+==165821==    at 0x4915E3F: _IO_new_file_xsputn (fileops.c:1219)
+==165821==    by 0x4915E3F: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==165821==    by 0x490A849: puts (ioputs.c:40)
+==165821==    by 0x10A73D: clientRequest (client.c:80)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821==  Uninitialised value was created by a stack allocation
+==165821==    at 0x10A46A: clientRequest (client.c:8)
+==165821== 
+==165821== 
+==165821== 991 errors in context 3 of 6:
+==165821== Thread 5:
+==165821== Conditional jump or move depends on uninitialised value(s)
+==165821==    at 0x484B9B8: strlen (vg_replace_strmem.c:505)
+==165821==    by 0x490A7EC: puts (ioputs.c:35)
+==165821==    by 0x10A73D: clientRequest (client.c:80)
+==165821==    by 0x491DDEC: start_thread (pthread_create.c:447)
+==165821==    by 0x49A0EE3: clone (clone.S:100)
+==165821==  Uninitialised value was created by a stack allocation
+==165821==    at 0x10A46A: clientRequest (client.c:8)
+==165821== 
+==165821== ERROR SUMMARY: 1048 errors from 6 contexts (suppressed: 0 from 0)

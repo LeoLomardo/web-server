@@ -7,11 +7,9 @@
 #include <time.h>
 #include <stdlib.h>
 
-
 //VALORES ARBITRÁRIOS
 #define MAX_ENTRIES 200
 #define LOG_SIZE 2048
-#define LOG_FILE_NAME_SIZE 128
 
 typedef struct {
     char entries[MAX_ENTRIES][LOG_SIZE];
