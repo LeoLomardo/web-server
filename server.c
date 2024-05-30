@@ -18,7 +18,6 @@ void serverRun(Command *command) {
         exit(EXIT_FAILURE);
     }
     strcpy(stats.statsFileName, command->statsFilename);
-    //stats.statsFileName[sizeof(stats.statsFileName)] = '\0';
 
     LBufferInit(&log_buffer, command->logFilename);
 
@@ -85,6 +84,5 @@ void serverRun(Command *command) {
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
     }
-    pthread_join(log_thread, NULL);
     
 }

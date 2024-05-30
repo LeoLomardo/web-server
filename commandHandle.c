@@ -76,3 +76,4 @@ Command *extractCommandOptions(int argc, char *argv[]) {
 
     return command;
 }
+

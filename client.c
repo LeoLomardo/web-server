@@ -115,7 +115,7 @@ void *clientRequest(void *client_sockfd) {
         
     }
     pthread_mutex_lock(&stats.stats_mutex);
-    statisticsPrint(&stats);
+    statisticsPrint(stats);
     pthread_mutex_unlock(&stats.stats_mutex);
 
     close(sock);
