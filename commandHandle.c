@@ -10,9 +10,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
     }
 
     command->background = 0;
-    command->logFilename[0] = '\0';
-    command->statsFilename[0] = '\0';
-    command->rootDir[0] = '\0';
+    command->port = 0;
     if (argc < 2) {
         printf("[CONSOLE] - Please start the server using the following the usage below.\n");
         printf("Usage: %s -p <port> -l <logfile> -s <statsfile> -r <rootdir> -b\n", argv[0]);
@@ -27,16 +25,19 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 break;
             case 'l':
                 printf("[CONSOLE] - Log file name is %s.\n", optarg);
+                command->logFilename = (char *)malloc(strlen(optarg) + 1);
                 strncpy(command->logFilename, optarg, sizeof(command->logFilename) - 1);
                 command->logFilename[sizeof(command->logFilename) - 1] = '\0';
                 break;
             case 's':
                 printf("[CONSOLE] - Stats file name is %s.\n", optarg);
-                strncpy(command->statsFilename, optarg, sizeof(command->statsFilename) - 1);
-                command->statsFilename[sizeof(command->statsFilename) - 1] = '\0';
+                command->statsFilename = (char *)malloc(strlen(optarg) + 1);
+                strcpy(command->statsFilename, optarg);
+                command->statsFilename[sizeof(command->statsFilename) ] = '\0';
                 break;
             case 'r':
                 printf("[CONSOLE] - Root directory is %s.\n", optarg);
+                command->rootDir = (char *)malloc(strlen(optarg) + 1);
                 strncpy(command->rootDir, optarg, sizeof(command->rootDir) - 1);
                 command->rootDir[sizeof(command->rootDir) - 1] = '\0';
                 break;
@@ -46,6 +47,9 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 break;
             default:
                 fprintf(stderr, "Unknown command.\n");
+                free(command->logFilename);
+                free(command->statsFilename);
+                free(command->rootDir); 
                 free(command);
                 exit(EXIT_FAILURE);
         }

@@ -8,6 +8,7 @@
 #include <time.h>
 #include <pthread.h>
 #include <sys/stat.h>
+#include <arpa/inet.h>
 
 #include "log.h"
 #include "statsInfo.h"

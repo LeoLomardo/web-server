@@ -12,11 +12,11 @@
 #define LOG_SIZE 2048
 
 typedef struct {
-    char entries[MAX_ENTRIES][LOG_SIZE];
     int start;
     int end;
     int count;
     int size;
+    char entries[MAX_ENTRIES][LOG_SIZE];
     char *logFile;
     pthread_mutex_t mutex;
     pthread_cond_t cond;

@@ -28,17 +28,20 @@ void serverRun(Command *command) {
         exit(EXIT_FAILURE);
     }
 
-    int sockfd = socket(AF_INET, SOCK_STREAM, 0);
-    if (sockfd < 0) {
-        fprintf(stderr, "[CONSOLE] - Error creating socket\n");
-        exit(EXIT_FAILURE);
-    }
+   
 
     struct sockaddr_in server_addr;
     memset(&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = INADDR_ANY;
     server_addr.sin_port = htons(command->port);
+   
+     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    
+    if (sockfd < 0) {
+        fprintf(stderr, "[CONSOLE] - Error creating socket\n");
+        exit(EXIT_FAILURE);
+    }
 
     if (bind(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
         fprintf(stderr, "[CONSOLE] - Bind failed\n");
@@ -69,7 +72,7 @@ void serverRun(Command *command) {
             continue;
         }
 
-        printf("[SERVER] - Connection accepted from %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+        printf("[SERVER] - IP:%s \nPorta:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
     
         pthread_t thread_id;
         if (pthread_create(&thread_id, NULL, clientRequest, new_sockfd) != 0) {
@@ -81,7 +84,6 @@ void serverRun(Command *command) {
 
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
-
         
     }
 }

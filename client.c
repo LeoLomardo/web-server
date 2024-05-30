@@ -15,10 +15,10 @@ void *clientRequest(void *client_sockfd) {
     char buffer[1024];
 
 
-    int read_size = read(sock, buffer, sizeof(buffer) - 1);
+    int read_size = read(sock, buffer, sizeof(buffer));
     if (read_size > 0) {
         buffer[read_size] = '\0';
-        printf("[SERVER] - Received data: %s\n", buffer);
+        printf("%sHTTP/1.1\n", buffer);
     } else {
         fprintf(stderr, "[SERVER] - Read failed\n");
         close(sock);
@@ -41,11 +41,19 @@ void *clientRequest(void *client_sockfd) {
         char *ext = strrchr(full_path, '.');
         char *header;
         char content_type[50];
+
         struct stat st;
         stat(full_path, &st);
         int content_length = st.st_size;
 
-         if (ext != NULL) {
+        char last_modified[128];
+        struct tm *lt = localtime(&st.st_mtime);
+        strftime(last_modified, sizeof(last_modified), "%a, %d %b %Y %H:%M:%S GMT", lt);
+       
+        char etag[64];
+        snprintf(etag, sizeof(etag), "W/\"%lx-%lx\"", st.st_size, st.st_mtime);
+
+        if (ext != NULL){
             if (strcmp(ext, ".html") == 0) {
                 stats.html_count++;
                 strcpy(content_type, "text/html");
@@ -59,19 +67,21 @@ void *clientRequest(void *client_sockfd) {
                 stats.text_count++;
                 strcpy(content_type, "text/plain");
             }
-        } else {
-            strcpy(content_type, "application/octet-stream");
+        }else{
+            strcpy(content_type, "desconhecido");
         }
-        header = (char *)malloc(256);
-        snprintf(header, 256, "HTTP/1.1 200 OK\r\n"
+        header = (char *)malloc(512);
+        snprintf(header, 512, "HTTP/1.1 200 OK\r\n"
+                              "Server: Apache-Coyote/1.1\r\n"
+                              "ETag: %s\r\n"
+                              "Last-Modified: %s\r\n"
                               "Content-Type: %s\r\n"
                               "Content-Length: %d\r\n"
-                              "Date: %s"
-                              "Server: SimpleHTTP/1.0\r\n\r\n",
-                              content_type, content_length, asctime(t));
+                              "Date: %s\r\n\r\n",
+                              etag, last_modified, content_type, content_length, asctime(t));
 
         write(sock, header, strlen(header));
-        printf("[SERVER] - %s", header);
+        printf("[SERVER] - %s\n", header);
 
         char file_buffer[1024];
         int bytes_read;
@@ -85,11 +95,13 @@ void *clientRequest(void *client_sockfd) {
         fclose(inputFile);
         free(header);
     }
-    printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
+    //printf("\033[1;31mTo terminate the server press : CTRL + C\n\n\033[0m");
     // Update the global stats
     pthread_mutex_lock(&stats.stats_mutex);
     statisticsPrint(stats);
     pthread_mutex_unlock(&stats.stats_mutex);
+
+    printf("--------------------------------------------\n\n");
     close(sock);
 
     return NULL;

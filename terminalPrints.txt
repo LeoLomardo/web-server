@@ -1,0 +1,42 @@
+[CONSOLE] - Log file name is log.txt.
+[CONSOLE] - Stats file name is stats.txt.
+[CONSOLE] - Root directory is ./.
+[CONSOLE] - Background running set.
+[CONSOLE] - Server started on port 8080 rooted @./
+
+[SERVER] - Connection accepted from 127.0.0.1:45464
+[SERVER] - Created thread to handle client 127.0.0.1:45464
+GET /index_imagem.html HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/8.8.0
+Accept: */*
+
+ HTTP/1.1
+[SERVER] - HTTP/1.1 200 OK
+Server: SimpleHTTP/1.0
+ETag: "123456789"
+Last-Modified: Wed, 29 May 2024 21:07:53 GMT
+Content-Type: text/html
+Content-Length: 337
+Date: Wed May 29 21:07:53 2024
+Connection: close
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<body>
+    <h1>Welcome to the Index Page</h1>
+    <p>This is a simple HTML file for testing purposes.</p>
+    <img src = "loccoAbreu.jpeg" >
+</body>
+</html>
+
+[LOG] - Added log entry: 2024-05-29 21:07:53 200 OK: ./index_imagem.html
+
+To terminate the server press : CTRL + C
+
+[LOG] - Wrote log entry: 2024-05-29 21:07:53 200 OK: ./index_imagem.html

@@ -7,11 +7,11 @@
 #include <string.h>
 
 typedef struct command {
-    int port;
-    char logFilename[256];
-    char statsFilename[256];
-    char rootDir[256];
-    int background;
+    short int background;
+    int  port;
+    char *logFilename;
+    char *statsFilename;
+    char *rootDir;
 } Command;
 
 
