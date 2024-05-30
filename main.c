@@ -10,9 +10,11 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "[ERROR] Failed to extract command options\n");
         return EXIT_FAILURE;
     }
-
     serverRun(command);
-    free(command); 
+    /*free(command->logFilename);
+    free(command->statsFilename);
+    free(command->rootDir);
+    free(command);*/
     //pthread_mutex_destroy(&stats.stats_mutex);
     return 0;
 }

@@ -18,7 +18,7 @@ void serverRun(Command *command) {
         exit(EXIT_FAILURE);
     }
     strcpy(stats.statsFileName, command->statsFilename);
-    stats.statsFileName[sizeof(stats.statsFileName)] = '\0';
+    //stats.statsFileName[sizeof(stats.statsFileName)] = '\0';
 
     LBufferInit(&log_buffer, command->logFilename);
 
@@ -28,7 +28,6 @@ void serverRun(Command *command) {
         exit(EXIT_FAILURE);
     }
 
-   
 
     struct sockaddr_in server_addr;
     memset(&server_addr, 0, sizeof(server_addr));
@@ -36,7 +35,7 @@ void serverRun(Command *command) {
     server_addr.sin_addr.s_addr = INADDR_ANY;
     server_addr.sin_port = htons(command->port);
    
-     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     
     if (sockfd < 0) {
         fprintf(stderr, "[CONSOLE] - Error creating socket\n");
@@ -54,16 +53,17 @@ void serverRun(Command *command) {
     }
 
     printf("[CONSOLE] - Server started on port %d rooted @%s\n\n", command->port, command->rootDir);
-
+    
     while (1) {
         struct sockaddr_in client_addr;
         socklen_t client_len = sizeof(client_addr);
-
         int *new_sockfd = malloc(sizeof(int));
         if (new_sockfd == NULL) {
             fprintf(stderr, "[CONSOLE] - Failed to allocate memory for new socket\n");
+            //free(new_sockfd);
             continue;
         }
+        
 
         *new_sockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
         if (*new_sockfd < 0) {
@@ -72,7 +72,7 @@ void serverRun(Command *command) {
             continue;
         }
 
-        printf("[SERVER] - IP:%s \nPorta:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+        printf("[SERVER] - IP:%s Porta:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
     
         pthread_t thread_id;
         if (pthread_create(&thread_id, NULL, clientRequest, new_sockfd) != 0) {
@@ -84,6 +84,7 @@ void serverRun(Command *command) {
 
         printf("[SERVER] - Created thread to handle client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
-        
     }
+    pthread_join(log_thread, NULL);
+    
 }

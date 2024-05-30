@@ -17,7 +17,6 @@ void *LPrinfFile(void *arg) {
         buffer->count--;
         pthread_mutex_unlock(&buffer->mutex);
     }
-    free(buffer);
-    fclose(logfile);
+    fclose(logfile);    
     return NULL;
 }
