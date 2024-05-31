@@ -28,7 +28,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 command->port = atoi(optarg);
                 break;
             case 'l':
-                printf("[CONSOLE] - Log file name is %s.\n", optarg);
+                printf("[CONSOLE] - Log file name is %s\n", optarg);
                 command->logFilename = (char *)malloc(strlen(optarg) + 1);
                 if (command->logFilename == NULL) {
                     fprintf(stderr, "[CONSOLE] - Error trying to malloc logFilename.\n");
@@ -38,7 +38,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 strcpy(command->logFilename, optarg);
                 break;
             case 's':
-                printf("[CONSOLE] - Stats file name is %s.\n", optarg);
+                printf("[CONSOLE] - Stats file name is %s\n", optarg);
                 command->statsFilename = (char *)malloc(strlen(optarg) + 1);
                 if (command->statsFilename == NULL) {
                     fprintf(stderr, "[CONSOLE] - Error trying to malloc statsFilename.\n");
@@ -49,7 +49,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 strcpy(command->statsFilename, optarg);
                 break;
             case 'r':
-                printf("[CONSOLE] - Root directory is %s.\n", optarg);
+                printf("[CONSOLE] - Root directory is %s\n", optarg);
                 command->rootDir = (char *)malloc(strlen(optarg) + 1);
                 if (command->rootDir == NULL) {
                     fprintf(stderr, "[CONSOLE] - Error trying to malloc rootDir.\n");
@@ -61,11 +61,11 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 strcpy(command->rootDir, optarg);
                 break;
             case 'b':
-                printf("[CONSOLE] - Background running set.\n");
+                printf("[CONSOLE] - Background running set\n");
                 command->background = 1;
                 break;
             default:
-                fprintf(stderr, "Unknown command.\n");
+                fprintf(stderr, "Unknown command\n");
                 free(command->logFilename);
                 free(command->statsFilename);
                 free(command->rootDir);

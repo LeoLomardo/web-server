@@ -5,6 +5,8 @@ extern LogBuffer log_buffer;
 extern Command *command;
 extern StatsInfo stats;
 
+#define MAX_BUFFER_SIZE 70000
+
 void *clientRequest(void *client_sockfd) {
     time_t now = time(NULL);
     struct tm *t = localtime(&now);
@@ -12,33 +14,28 @@ void *clientRequest(void *client_sockfd) {
     int sock = *(int *)client_sockfd;
     free(client_sockfd);
     
-    char *buffer = (char *)malloc(1024 * sizeof(char));
-    if (buffer == NULL) {
-        fprintf(stderr, "[SERVER] - Error allocating memory for buffer\n");
-        close(sock);
-        return NULL;
-    }
+    char buffer[MAX_BUFFER_SIZE];
+    
 
 
-    int read_size = read(sock, buffer, 1024);
+    int read_size = read(sock, buffer, MAX_BUFFER_SIZE-1);
     if (read_size > 0) {
         buffer[read_size] = '\0';
         printf(" %s\n", buffer);
     } else {
         fprintf(stderr, "[SERVER] - Read failed\n");
         close(sock);
-        free(buffer);
+        //free(buffer);
         return NULL;
     }
 
-    char method[10] = {0}, path[255] = {0}, protocol[10] = {0};
-    sscanf(buffer, "%9s %254s %9s", method, path, protocol);
+    char method[10] , path[255], protocol[10];
+    sscanf(buffer, "%s %s %s", method, path, protocol);
     
     char full_path[256] = ".";
-     
     strncat(full_path, path, sizeof(full_path) - strlen(full_path) - 1);
 
-    FILE *inputFile = fopen(full_path, "r+");
+    FILE *inputFile = fopen(full_path, "rb");
     if (inputFile == NULL) {
         const char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
         write(sock, error_message, strlen(error_message));
@@ -47,14 +44,14 @@ void *clientRequest(void *client_sockfd) {
     } else {
         char *ext = strrchr(full_path, '.');
         char *header;
-        char content_type[50] = {0} ;
+        char content_type[50] ;
 
         struct stat lastChange;
         if (stat(full_path, &lastChange) == -1) {
-            perror("stat");
+            fprintf(stderr, "deu merda aqui e nao tenho mais neuronios pra descobrir a quem essa mensagem de erro se refere\n");
             fclose(inputFile);
             close(sock);
-            free(buffer);
+            //free(buffer);
             return NULL;
         }
         stat(full_path, &lastChange);
@@ -66,22 +63,29 @@ void *clientRequest(void *client_sockfd) {
         if (ext != NULL){
             if (strcmp(ext, ".html") == 0) {
                 stats.html_count++;
-                strcpy(content_type, "text/html");
+                snprintf(content_type, sizeof(content_type), "text/html; charset=UTF-8");
             } else if (strcmp(ext, ".jpg") == 0 || strcmp(ext, ".jpeg") == 0) {
                 stats.image_count++;
-                strcpy(content_type, "image/jpeg");
+                snprintf(content_type, sizeof(content_type), "image/jpeg");
             } else if (strcmp(ext, ".png") == 0) {
                 stats.image_count++;
-                strcpy(content_type, "image/png");
+                snprintf(content_type, sizeof(content_type), "image/png");
             } else {
                 stats.text_count++;
-                strcpy(content_type, "text/plain");
+                snprintf(content_type, sizeof(content_type), "text/plain; charset=UTF-8");
             }
         }else{
-            strcpy(content_type, "desconhecido");
+            strncpy(content_type, "unknown", sizeof(content_type) - 1);
         }
-        header = (char *)malloc(512);
-        snprintf(header, 512, "HTTP/1.1 200 OK\r\n"
+        header = (char*)malloc(1024 * sizeof(char));
+        if (header == NULL) {
+            fprintf(stderr, "[SERVER] - Error allocating memory for header\n");
+            fclose(inputFile);
+            close(sock);
+            //free(buffer);
+            return NULL;
+        }
+        snprintf(header, 1024, "HTTP/1.1 200 OK\r\n"
                               "Server: Apache-Coyote/1.1\r\n"
                               "ETag: %s\r\n"
                               "Last-Modified: %s\r"
@@ -94,14 +98,8 @@ void *clientRequest(void *client_sockfd) {
         printf(" %s\n", header);
         free(header);
 
-        char *file_buffer = (char *)malloc(1024 * sizeof(char));
-        if (file_buffer == NULL) {
-            fprintf(stderr, "[SERVER] - Error allocating memory for file_buffer\n");
-            fclose(inputFile);
-            close(sock);
-            free(buffer);
-            return NULL;
-        }
+        char file_buffer[1024];
+
         int bytes_read;
         while ((bytes_read = fread(file_buffer, 1, 1024, inputFile)) > 0) {
             write(sock, file_buffer, bytes_read);
@@ -109,9 +107,9 @@ void *clientRequest(void *client_sockfd) {
         }
 
         snprintf(buffer, 1024, "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
-        LEntry(&log_buffer, buffer);
+        LEntry(&log_buffer, full_path);
         fclose(inputFile);
-        free(file_buffer);
+        //free(file_buffer);
         
     }
     pthread_mutex_lock(&stats.stats_mutex);
@@ -119,7 +117,6 @@ void *clientRequest(void *client_sockfd) {
     pthread_mutex_unlock(&stats.stats_mutex);
 
     close(sock);
-    free(buffer);
 
     return NULL;
 }

@@ -10,6 +10,7 @@
 //VALORES ARBITRÁRIOS
 #define MAX_ENTRIES 200
 #define LOG_SIZE 2048
+#define MAX_BUFFER_SIZE 70000
 
 typedef struct {
     int start;
