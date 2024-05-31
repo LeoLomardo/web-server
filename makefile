@@ -1,10 +1,10 @@
 PROJ_NAME = web_server
 CC = gcc
-CFLAGS = -Wall  -Wpedantic -O2 -g -fsanitize=address -pthread 
+CFLAGS = -Wall  -Wpedantic -O2 -g -pthread 
 
 
-C_SOURCE = client.c commandHandle.c logAddEntry.c logFree.c logInitBuffer.c logPrintFile.c main.c server.c saveStats.c
-H_SOURCE = client.h commandHandle.h log.h main.h server.h statsInfo.h
+C_SOURCE = client.c commandHandle.c logAddEntry.c logFree.c logInitBuffer.c logPrintFile.c main.c server.c saveStats.c usrSig.c
+H_SOURCE = client.h commandHandle.h log.h main.h server.h statsInfo.h usrSig.h
 
 # Arquivos objeto
 OBJ = $(C_SOURCE:.c=.o)

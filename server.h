@@ -10,13 +10,14 @@
 #include <sys/socket.h>
 #include <pthread.h>
 #include <arpa/inet.h>
-
+#include <signal.h>
 #include <netdb.h>
 
 #include "log.h"
 #include "client.h"
 #include "statsInfo.h"
-
+#include "usrSig.h"
+#define BACKLOG 10
 
 void serverRun(Command *command);
 

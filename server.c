@@ -3,25 +3,32 @@
 LogBuffer log_buffer;
 StatsInfo stats;
 
-#define BACKLOG 10
-#define PORT 8080
+extern int server_running ;
+int server_sockfd;
+
 
 void serverRun(Command *command) {
+
     if (command == NULL) {
         fprintf(stderr, "[ERROR] Options are NULL\n");
         exit(EXIT_FAILURE);
     }
+
     struct sockaddr_in client_addr;
     socklen_t client_len;
+
     stats.html_count = 0;
     stats.image_count = 0;
     stats.text_count = 0;
+
     stats.statsFileName = (char *)malloc(strlen(command->statsFilename) + 1);
     if (stats.statsFileName == NULL) {
         fprintf(stderr, "Failed to allocate memory for statsFileName\n");
         exit(EXIT_FAILURE);
     }
     strcpy(stats.statsFileName, command->statsFilename);
+
+    signal(SIGINT, handle_signal);
 
     LBufferInit(&log_buffer, command->logFilename);
 
@@ -36,12 +43,34 @@ void serverRun(Command *command) {
     memset(&(server_addr.sin_zero), '\0', 8);
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = INADDR_ANY;
-    //server_addr.sin_port = htons(command->port);
-    server_addr.sin_port = htons(PORT);
-    int server_sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    server_addr.sin_port = htons(command->port);
+
+    /*
+     * Socket parametros:
+
+     * AF_INET - IPv4
+     * SOCK_STREAM - TCP
+     * 0 - Protocolo padrao para requisicao feita
+    */
+
+    server_sockfd = socket(AF_INET, SOCK_STREAM, 0);
     int client_sockfd;
+
     if (server_sockfd < 0) {
         fprintf(stderr, "[CONSOLE] - Error creating socket\n");
+        exit(EXIT_FAILURE);
+    }
+
+    /**
+     * Durante o desenvolvimento do programa, nao podia realizar testes rapidamente utilizando a mesma porta
+     * pesquisando sobre isso na internet, vi a funcao setsockopt com a flag SO_REUSEADDR, que, caso o endereco
+     * que estou tentando realizar um novo teste esteja em uso, ele o reutiliza, evitando ter que esperar.
+     * 
+     */
+    int opt = 1;
+    if (setsockopt(server_sockfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
+        fprintf(stderr, "[CONSOLE] - setsockopt(SO_REUSEADDR) failed\n");
+        close(server_sockfd);
         exit(EXIT_FAILURE);
     }
 
@@ -50,16 +79,24 @@ void serverRun(Command *command) {
         close(server_sockfd);
         exit(EXIT_FAILURE);
     }
-
+    /**
+     * Listen parametros:
+     * 
+     * server_sockfd - socket criado
+     * BACKLOG - numero de conexoes que podem ser enfileiradas, utilizei 10 como valor arbitrario
+     * a documentacao da funcao fala que caso seja valor menor que 0, o valor padrao que sera utilizado e 0
+     * 
+    */
     if (listen(server_sockfd, BACKLOG) < 0) {
         fprintf(stderr, "[CONSOLE] - Listen failed\n");
         close(server_sockfd);
         exit(EXIT_FAILURE);
     }
 
-    printf("[CONSOLE] - Server started on port %d rooted @%s\n\n", command->port, command->rootDir);
-   
-    while (1) {
+    printf("[CONSOLE] - Server started on port %d rooted %s\n\n", command->port, command->rootDir);
+    printf("[CONSOLE] - Para terminar o servidor, use o comando: kill -SIGUSR1 %d\n", getpid());
+
+    while (server_running) {
         
        client_len = sizeof(struct sockaddr_in);
 
@@ -85,7 +122,7 @@ void serverRun(Command *command) {
         pthread_detach(thread_id);
 
     }
+    pthread_cancel(log_thread);
+    pthread_join(log_thread, NULL);
     free(stats.statsFileName);
-    close(server_sockfd);
-    
 }

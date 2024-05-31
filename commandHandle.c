@@ -49,7 +49,7 @@ Command *extractCommandOptions(int argc, char *argv[]) {
                 strcpy(command->statsFilename, optarg);
                 break;
             case 'r':
-                printf("[CONSOLE] - Root directory is %s\n", optarg);
+                printf("[CONSOLE] - Root directory is %s \n", optarg);
                 command->rootDir = (char *)malloc(strlen(optarg) + 1);
                 if (command->rootDir == NULL) {
                     fprintf(stderr, "[CONSOLE] - Error trying to malloc rootDir.\n");

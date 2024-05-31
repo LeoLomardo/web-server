@@ -1,18 +1,11 @@
 #!/bin/bash
-check_port() {
-    ss -tuln | grep -q ":$1 "
-    return $?
-}
 
-if check_port 8080; then
-    SERVER_URL="http://localhost:8080"
-else
-    SERVER_URL="http://localhost:3000"
-fi
+SERVER_URL="http://localhost:8080"
 
-FILES=("index.html"  "index_imagem.html")
 
-NUM_REQUESTS=50
+FILES=("index.html"  "index_imagem.html" "index_texto.html" "index_texto_imagem.html" "erro.html" "hino.txt")
+
+NUM_REQUESTS=5
 
 make_request() {
     local file=$1
