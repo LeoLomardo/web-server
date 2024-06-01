@@ -32,7 +32,7 @@ void *clientRequest(void *client_sockfd) {
     printf("[SERVER] - Requested path: %s\n", full_path);
 
     // Abrir o arquivo em modo binário
-    FILE *inputFile = fopen(full_path, "rb+");
+    FILE *inputFile = fopen(full_path, "r");
     if (inputFile == NULL) {
         const char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
         write(sock, error_message, strlen(error_message));

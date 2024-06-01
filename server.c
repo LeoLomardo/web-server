@@ -112,5 +112,5 @@ void serverRun(Command *command) {
     }
     pthread_cancel(log_thread);
     pthread_join(log_thread, NULL);
-    free(stats.statsFileName);
+    //free(stats.statsFileName);
 }
