@@ -1,0 +1,3 @@
+HTML: 1
+IMAGEM: 1
+TEXTO: 0

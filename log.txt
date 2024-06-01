@@ -1,46 +1,16 @@
-2024-05-31 17:49:04 404 Not Found: ./inde.html
-2024-05-19 19:19:56 200 OK: ./index.html
-2024-05-31 00:56:29 200 OK: ./index_imagem.html
-2023-11-06 22:19:01 200 OK: ./loccoAbreu.jpeg
-2024-05-31 17:49:17 404 Not Found: ./index_imagem_texto.html
-2024-05-31 16:52:08 200 OK: ./index_texto_imagem.html
-2024-05-31 16:51:50 200 OK: ./hino.txt
-2023-11-06 22:19:01 200 OK: ./loccoAbreu.jpeg
-2024-05-31 16:51:57 200 OK: ./index_texto.html
-2024-05-31 16:51:50 200 OK: ./hino.txt
-2024-05-31 00:56:29 200 OK: ./index_imagem.html
-2024-05-19 19:19:56 200 OK: ./index.html
-2024-05-19 19:19:56 200 OK: ./index.html
-2024-05-19 19:19:56 200 OK: ./index_imagem.html
-2024-05-31 16:51:57 200 OK: ./index_texto_imagem.html
-2024-05-31 16:51:50 200 OK: ./index_imagem.html
-2024-05-31 17:53:30 200 OK: ./index.html
-2024-05-31 17:53:30 200 OK: ./index_texto.html
-2024-05-31 16:52:08 200 OK: ./hino.txt
-2024-05-31 16:52:08 200 OK: ./index_texto_imagem.html
-2024-05-31 16:52:08 200 OK: ./index_texto_imagem.html
-2024-05-31 16:51:57 200 OK: ./index_texto.html
-2024-05-31 16:52:08 200 OK: ./index_texto.html
-2024-05-31 16:52:08 200 OK: ./index_imagem.html
-2024-05-19 19:19:56 200 OK: ./hino.txt
-2024-05-31 17:53:30 404 Not Found: ./erro.html
-2024-05-31 17:53:30 200 OK: ./index_imagem.html
-2024-05-31 17:53:30 200 OK: ./index_texto_imagem.html
-2024-05-31 17:53:31 404 Not Found: ./erro.html
-2024-05-31 16:51:57 404 Not Found: ./erro.html
-2024-05-31 16:51:57 200 OK: ./index_texto.html
-2024-05-31 16:51:50 200 OK: ./index_texto.html
-2024-05-31 17:53:31 200 OK: ./index.html
-2024-05-31 17:53:31 200 OK: ./hino.txt
-2024-05-31 17:53:31 404 Not Found: ./erro.html
-2024-05-31 17:53:31 200 OK: ./index.html
-2024-05-31 17:53:31 200 OK: ./hino.txt
-2024-05-31 17:53:31 200 OK: ./index_texto_imagem.html
-2024-05-31 17:53:31 404 Not Found: ./erro.html
-2024-05-31 16:51:50 200 OK: ./hino.txt
-2024-05-31 16:51:57 200 OK: ./index_texto.html
-2024-05-31 16:51:50 200 OK: ./hino.txt
-2024-05-31 16:51:57 200 OK: ./index_texto.html
-2024-05-31 16:51:50 200 OK: ./hino.txt
-2024-05-31 16:51:57 200 OK: ./index_texto.html
-2024-05-31 16:51:50 200 OK: ./hino.txt
+
+2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
+2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
+2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
+2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
+2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-01 02:46:02 404 Not Found: ./favicon.ico
+2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
+2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
+2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
+2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg

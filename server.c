@@ -56,38 +56,26 @@ void serverRun(Command *command) {
     server_sockfd = socket(AF_INET, SOCK_STREAM, 0);
     int client_sockfd;
 
-    if (server_sockfd < 0) {
+    if (server_sockfd== -1) {
         fprintf(stderr, "[CONSOLE] - Error creating socket\n");
         exit(EXIT_FAILURE);
     }
 
-    /**
-     * Durante o desenvolvimento do programa, nao podia realizar testes rapidamente utilizando a mesma porta
-     * pesquisando sobre isso na internet, vi a funcao setsockopt com a flag SO_REUSEADDR, que, caso o endereco
-     * que estou tentando realizar um novo teste esteja em uso, ele o reutiliza, evitando ter que esperar.
-     * 
-     */
+
     int opt = 1;
-    if (setsockopt(server_sockfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
+    if (setsockopt(server_sockfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt))== -1) {
         fprintf(stderr, "[CONSOLE] - setsockopt(SO_REUSEADDR) failed\n");
         close(server_sockfd);
         exit(EXIT_FAILURE);
     }
 
-    if (bind(server_sockfd, (struct sockaddr *)&server_addr, sizeof(struct sockaddr)) < 0) {
+    if (bind(server_sockfd, (struct sockaddr *)&server_addr, sizeof(struct sockaddr))== -1) {
         fprintf(stderr, "[CONSOLE] - Bind failed\n");
         close(server_sockfd);
         exit(EXIT_FAILURE);
     }
-    /**
-     * Listen parametros:
-     * 
-     * server_sockfd - socket criado
-     * BACKLOG - numero de conexoes que podem ser enfileiradas, utilizei 10 como valor arbitrario
-     * a documentacao da funcao fala que caso seja valor menor que 0, o valor padrao que sera utilizado e 0
-     * 
-    */
-    if (listen(server_sockfd, BACKLOG) < 0) {
+
+    if (listen(server_sockfd, BACKLOG)== -1) {
         fprintf(stderr, "[CONSOLE] - Listen failed\n");
         close(server_sockfd);
         exit(EXIT_FAILURE);
@@ -98,9 +86,9 @@ void serverRun(Command *command) {
 
     while (server_running) {
         
-       client_len = sizeof(struct sockaddr_in);
+        client_len = sizeof(struct sockaddr_in);
 
-        if ( (client_sockfd = accept(server_sockfd, (struct sockaddr *)&client_addr, &client_len)) < 0) {
+        if ( (client_sockfd = accept(server_sockfd, (struct sockaddr *)&client_addr, &client_len))== -1) {
             fprintf(stderr, "[CONSOLE] - Accept failed\n");
             continue;
         }
