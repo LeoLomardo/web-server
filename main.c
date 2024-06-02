@@ -13,8 +13,6 @@ int main(int argc, char *argv[]) {
 
     serverRun(command);
 
-    free(command->logFilename);
-    free(command->statsFilename);
     free(command->rootDir);
     free(command);
     

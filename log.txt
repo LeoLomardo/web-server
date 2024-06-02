@@ -1,4 +1,27 @@
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-02 18:28:20 200 OK: ./testes/index_imagem.html
+2024-06-02 18:31:55 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-05-31 19:51:57 200 OK: ./testes/index_texto.html
+2024-05-31 19:51:50 200 OK: ./testes/hino.txt
 2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
 2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
-2024-06-02 14:13:02 404 Not Found: ./index_imagem.html
-2024-06-02 14:13:02 404 Not Found: ./index_imagem.html
+2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
+2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
+2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
+2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
+2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
+2024-06-02 18:42:47 200 OK: ./testes/index_texto_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html

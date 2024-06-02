@@ -12,13 +12,14 @@
 #include <arpa/inet.h>
 #include <signal.h>
 #include <netdb.h>
+#include <errno.h>
+#include <sys/select.h> 
 
 #include "log.h"
 #include "client.h"
-#include "statsInfo.h"
 #include "usrSig.h"
 
-#define BACKLOG 10
+
 #define RED   "\x1B[31m"
 #define GRN   "\x1B[32m"
 #define YEL   "\x1B[33m"

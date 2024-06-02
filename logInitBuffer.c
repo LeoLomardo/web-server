@@ -5,6 +5,7 @@ void LBufferInit(LogBuffer *buffer, const char *filename) {
     buffer->end = 0;
     buffer->count = 0;
     buffer->size = MAX_BUFFER_SIZE;
+    
     buffer->logFile = (char *)malloc(strlen(filename) + 1); 
     if (buffer->logFile == NULL) {
         fprintf(stderr,"Failed to allocate memory for logFile\n");

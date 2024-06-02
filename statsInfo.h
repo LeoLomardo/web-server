@@ -6,11 +6,5 @@
 #include <signal.h>
 #include <string.h>
 
-typedef struct {
-    int html_count;
-    int image_count;
-    int text_count;
-    char *statsFileName;
-} StatsInfo;
 
 #endif

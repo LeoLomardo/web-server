@@ -1,6 +1,6 @@
 PROJ_NAME = web_server
 CC = gcc
-CFLAGS = -Wall  -Wpedantic -O2 -g -pthread 
+CFLAGS = -Wall  -Wpedantic -O2 -g -pthread -fsanitize=address
 
 
 C_SOURCE = client.c commandHandle.c logAddEntry.c logInitBuffer.c logPrintFile.c main.c server.c usrSig.c

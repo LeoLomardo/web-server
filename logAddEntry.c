@@ -13,7 +13,9 @@ void LEntry(LogBuffer *buffer, const char *entry) {
         printf("[LOG] - Added log entry: %s\n", entry);
 
     } else {
-        fprintf(stderr, "[LOG] - Log buffer full, entry discarded: %s\n", entry);
+        fprintf(stderr, "[LOG] - Entries FULL: %s\n", entry);
+        exit(EXIT_FAILURE);
+        
     }
     pthread_mutex_unlock(&buffer->mutex);
 }
