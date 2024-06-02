@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVER_URL="http://localhost:8080"
+SERVER_URL="http://localhost:8080/testes"
 
 
 FILES=("index.html"  "index_imagem.html" "index_texto.html" "index_texto_imagem.html" "erro.html" "hino.txt")

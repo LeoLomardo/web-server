@@ -1,9 +1,11 @@
 #include "log.h"
 
+FILE *logfile;
+
 void *LPrinfFile(void *arg) {
     LogBuffer *buffer = (LogBuffer *)arg;
 
-    FILE *logfile = fopen(buffer->logFile, "a+");
+    logfile = fopen(buffer->logFile, "a+");
 
     while (1) {
         pthread_mutex_lock(&buffer->mutex);
@@ -17,6 +19,5 @@ void *LPrinfFile(void *arg) {
         buffer->count--;
         pthread_mutex_unlock(&buffer->mutex);
     }
-    fclose(logfile);    
     return NULL;
 }

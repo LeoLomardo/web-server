@@ -26,6 +26,5 @@ typedef struct {
 void LBufferInit(LogBuffer *buffer, const char *filename);
 void LEntry(LogBuffer *buffer, const char *entry);
 void *LPrinfFile(void *arg);
-void LBufferFree(LogBuffer *buffer);
 
 #endif

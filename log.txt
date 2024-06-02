@@ -1,44 +1,4 @@
-
-2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 00:57:06 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 02:46:02 404 Not Found: ./favicon.ico
-2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 02:53:09 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-05-31 16:51:57 200 OK: ./testes/index_texto.html
-2024-05-31 16:51:50 200 OK: ./testes/hino.txt
-2024-05-31 16:52:08 200 OK: ./testes/index_texto_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-05-31 16:51:50 200 OK: ./testes/hino.txt
-2024-06-01 02:54:33 200 OK: ./testes/index_texto_imagem.html
-2024-06-01 02:54:33 404 Not Found: ./loccoAbreu.jpeg
-2024-05-31 16:51:50 200 OK: ./testes/hino.txt
-2024-06-01 02:54:53 200 OK: ./testes/index_texto_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-05-31 16:51:50 200 OK: ./testes/hino.txt
-2024-06-01 02:56:58 404 Not Found: ./index_imagem.html
-2024-06-01 02:56:58 404 Not Found: ./index.html
-2024-06-01 02:57:05 404 Not Found: ./index.html
-2024-05-19 19:19:56 200 OK: ./testes/index.html
-2024-05-19 19:19:56 404 Not Found: ./index_imagem.html
-2024-05-31 16:51:57 200 OK: ./testes/index_texto.html
-2024-05-31 16:51:50 200 OK: ./testes/hino.txt
-2024-05-19 19:19:56 200 OK: ./testes/index.html
-2024-06-01 02:54:53 200 OK: ./testes/index_texto_imagem.html
-2024-05-31 16:51:50 200 OK: ./testes/hino.txt
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
-2024-06-01 02:46:41 200 OK: ./testes/index_imagem.html
-2023-11-06 22:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
+2024-06-01 05:54:53 200 OK: ./testes/index_texto_imagem.html
+2024-06-02 14:13:02 404 Not Found: ./index_imagem.html
+2024-06-02 14:13:02 404 Not Found: ./index_imagem.html
