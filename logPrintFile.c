@@ -6,7 +6,6 @@ void *LPrinfFile(void *arg){
     LogBuffer *buffer = (LogBuffer *)arg;
 
     logFile = fopen(buffer->logFile, "a+");
-
     while(1){
         pthread_mutex_lock(&buffer->mutex);
         while (buffer->count == 0){
