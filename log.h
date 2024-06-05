@@ -1,19 +1,20 @@
 #ifndef LOG_H
 #define LOG_H
 
-#include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <pthread.h>
 #include <time.h>
-#include <stdlib.h>
+
 #include "commandHandle.h"
 #include "usrSig.h"
 
-//VALORES ARBITRÁRIOS
+//VALORES ARBITRARIOS
 #define MAX_ENTRIES 200
 #define MAX_BUFFER_SIZE 70000
 
-typedef struct {
+typedef struct logbuffer{
     int start;
     int end;
     int count;

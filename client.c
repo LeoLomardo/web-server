@@ -18,7 +18,7 @@ void *clientRequest(void *client_sockfd){
         buffer[read_size] = '\0';
         printf(" %s\n", buffer);
     }else{
-        fprintf(stderr, "[SERVER] - Read failed\n");
+        fprintf(stderr, "clientRequest - Failed to read buffer content\n");
         close(sock);
         return NULL;
     }
@@ -28,7 +28,7 @@ void *clientRequest(void *client_sockfd){
     
     char full_path[256] = ".";
     strncat(full_path, path, sizeof(full_path) - strlen(full_path) - 1);
-    printf("[SERVER] - Requested path: %s\n", full_path);
+    printf("clientRequest - Requested path: %s\n", full_path);
 
     FILE *inputFile = fopen(full_path, "rb");
 
@@ -46,10 +46,9 @@ void *clientRequest(void *client_sockfd){
 
     struct stat lastChange;
     if(stat(full_path, &lastChange) == -1){
-        fprintf(stderr, "Erro ao obter informações do arquivo\n");
+        fprintf(stderr, "clientRequest - Failed to get file input informations\n");
         fclose(inputFile);
         close(sock);
-        return NULL;
     }
 
     int content_length = lastChange.st_size;
@@ -121,10 +120,10 @@ void *clientRequest(void *client_sockfd){
         lastmodbuf, content_length, timebuf, content_type);
 
     if(write(sock, header, strlen(header)) == -1){
-        fprintf(stderr, "[SERVER] - Failed to send header");
+        fprintf(stderr, "clientRequest - Failed to send header");
         fclose(inputFile);
         close(sock);
-        return NULL;
+        exit(EXIT_FAILURE);
     }
     printf(" %s\n", header);
 
@@ -134,19 +133,22 @@ void *clientRequest(void *client_sockfd){
 
     while ((bytes_read = fread(ret_buffer, 1, sizeof(ret_buffer), inputFile)) > 0){
        if(write(sock, ret_buffer, bytes_read) == -1){
-            fprintf(stderr, "[SERVER] - Failed to send file content\n");
+            fprintf(stderr, "clientRequest - Failed to send file content\n");
             fclose(inputFile);
             close(sock);
             return NULL;
         }
     }
-
+    /*
+     * Nao consegui adicionar o tempo com o fuso brasileiro, e tambem tive um problema com o horario, quando faco mais de 1 requisicao, o log escreve horarios com
+     * uma diferenca de tempo muito grande, e nao consegui resolver esse problema.
+     */
     snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
     LEntry(&log_buffer, buffer);
 
     fclose(inputFile);
     close(sock);
 
-    printf("[CONSOLE] - Para " RED"terminar " RESET "o servidor, use o comando:" YEL " kill -SIGUSR1 %d\n" RESET, getpid() );
+    printf(" Para " RED"terminar " RESET "o servidor, use o comando:" YEL " kill -SIGUSR1 %d\n" RESET, getpid());
     return NULL;
 }

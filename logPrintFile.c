@@ -1,20 +1,20 @@
 #include "log.h"
 
-FILE *logfile;
+FILE *logFile;
 
-void *LPrinfFile(void *arg) {
+void *LPrinfFile(void *arg){
     LogBuffer *buffer = (LogBuffer *)arg;
 
-    logfile = fopen(buffer->logFile, "a+");
+    logFile = fopen(buffer->logFile, "a+");
 
-    while (1) {
+    while(1){
         pthread_mutex_lock(&buffer->mutex);
-        while (buffer->count == 0) {
+        while (buffer->count == 0){
             pthread_cond_wait(&buffer->cond, &buffer->mutex);
         }
-        fputs(buffer->entries[buffer->start], logfile);
-        fflush(logfile);
-        printf("[LOG] - Wrote log entry: %s\n", buffer->entries[buffer->start]);
+        fputs(buffer->entries[buffer->start], logFile);
+        fflush(logFile);
+        printf("LPrinfFile - Successfully wrote log entry: %s on file %s\n", buffer->entries[buffer->start], buffer->logFile);
         buffer->start = (buffer->start + 1) % MAX_ENTRIES;
         buffer->count--;
         pthread_mutex_unlock(&buffer->mutex);

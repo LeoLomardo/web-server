@@ -2,8 +2,8 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <assert.h>
 #include <stdlib.h>
+#include <assert.h>
 #include <unistd.h>
 
 #include "server.h"

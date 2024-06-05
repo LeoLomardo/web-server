@@ -8,7 +8,6 @@
 #include <unistd.h>  
 #include <string.h>
 
-
 #include "client.h"
 
 typedef struct {
@@ -18,8 +17,6 @@ typedef struct {
     char *statsFileName;
 } StatsInfo;
 
-void handle_signal(int signal);
-
-
+void sigHndler(int signal);
 
 #endif
