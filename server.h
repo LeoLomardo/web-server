@@ -13,7 +13,6 @@
 #include <signal.h>
 #include <netdb.h>
 #include <errno.h>
-#include <sys/select.h> 
 
 #include "log.h"
 #include "client.h"

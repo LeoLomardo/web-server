@@ -14,3 +14,13 @@
 2023-11-07 01:19:01 200 OK: ./testes/loccoAbreu.jpeg
 2024-05-31 19:51:50 200 OK: ./testes/hino.txt
 2024-06-06 21:54:06 404 Not Found: ./favicon.ico
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2023-11-07 01:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-09 11:05:01 404 Not Found: ./favicon.ico
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2023-11-07 01:19:01 200 OK: ./testes/loccoAbreu.jpeg
+2024-06-10 17:45:03 404 Not Found: ./favicon.ico
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html

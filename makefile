@@ -1,7 +1,7 @@
 PROJ_NAME = web_server
 CC = gcc
+#utilizei flags com W para exibir erros mais detalhados
 CFLAGS = -Wall  -Wpedantic -O2 -g -pthread -fsanitize=address
-
 
 C_SOURCE = client.c commandHandle.c logAddEntry.c logInitBuffer.c logPrintFile.c main.c server.c usrSig.c
 H_SOURCE = client.h commandHandle.h log.h main.h server.h statsInfo.h usrSig.h
