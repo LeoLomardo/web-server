@@ -1,0 +1,1 @@
+2024-06-01 05:46:41 200 OK: ./testes/index_imagem.html

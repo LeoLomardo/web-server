@@ -4,7 +4,7 @@ CC = gcc
 CFLAGS = -Wall  -Wpedantic -O2 -g -pthread -fsanitize=address
 
 C_SOURCE = client.c commandHandle.c logAddEntry.c logInitBuffer.c logPrintFile.c main.c server.c usrSig.c
-H_SOURCE = client.h commandHandle.h log.h main.h server.h statsInfo.h usrSig.h
+H_SOURCE = client.h commandHandle.h log.h main.h server.h  usrSig.h
 
 # Arquivos objeto
 OBJ = $(C_SOURCE:.c=.o)
