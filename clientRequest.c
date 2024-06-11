@@ -10,8 +10,16 @@
 #include <arpa/inet.h>
 
 void *clientRequest(void *client_sockfd){
+    /**
+     * Adiciona o fuso brasileiro ao log, tive problemas com horario e achei esse metodo
+     */
+    setenv("TZ", "America/Sao_Paulo", 1);
+    tzset();
+
     time_t now = time(NULL);
-    struct tm *t = localtime(&now);
+
+    struct tm t;
+    localtime_r(&now, &t);
 
     int sock = *(int *)client_sockfd;
     free(client_sockfd);
@@ -40,7 +48,7 @@ void *clientRequest(void *client_sockfd){
     if(inputFile == NULL){
         const char *error_message = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\nFile not found.\n";
         write(sock, error_message, strlen(error_message));
-        snprintf(buffer, MAX_BUFFER_SIZE, "%04d-%02d-%02d %02d:%02d:%02d 404 Not Found: %s\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
+        snprintf(buffer, MAX_BUFFER_SIZE, "%04d-%02d-%02d %02d:%02d:%02d 404 Not Found: %s\n", t.tm_year + 1900, t.tm_mon + 1, t.tm_mday, t.tm_hour, t.tm_min, t.tm_sec, full_path);
         LEntry(&log_buffer, buffer);
         close(sock);
         return NULL;
@@ -148,7 +156,7 @@ void *clientRequest(void *client_sockfd){
      * Nao consegui adicionar o tempo com o fuso brasileiro, e tambem tive um problema com o horario, quando faco mais de 1 requisicao, o log escreve horarios com
      * uma diferenca de tempo muito grande, e nao consegui resolver esse problema.
      */
-    snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, full_path);
+    snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n", t.tm_year + 1900, t.tm_mon + 1, t.tm_mday, t.tm_hour, t.tm_min, t.tm_sec, full_path);
     LEntry(&log_buffer, buffer);
 
     fclose(inputFile);
