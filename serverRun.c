@@ -13,7 +13,6 @@
 #include <pthread.h>
 #include <arpa/inet.h>
 #include <signal.h>
-#include <netdb.h>
 #include <errno.h> //errno new_socket
 #include <fcntl.h>
 
@@ -115,7 +114,7 @@ void serverRun(Command *command) {
                 break;
             }
         }
-
+        
         printf("serverRun - New connection from %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
 
         pthread_t thread_id;

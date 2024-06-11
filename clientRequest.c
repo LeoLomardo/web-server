@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <time.h> //pega data e hora
-#include <sys/stat.h> //pega ultima modificacao e tamanho do arquivo
-#include <unistd.h> //read write close
+#include <time.h> 
+#include <sys/stat.h> 
+#include <unistd.h> 
 #include <arpa/inet.h>
 
 void *clientRequest(void *client_sockfd){

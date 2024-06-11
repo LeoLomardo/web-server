@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <sys/socket.h>
 #include <unistd.h>  
-#include <string.h>
 #include <signal.h>
 
 StatsInfo stats;

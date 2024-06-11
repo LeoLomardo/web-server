@@ -2,11 +2,11 @@
 #define COMMAND_HANDLE_C
 
 typedef struct command {
-    short int background;
-    int  port;
     char *logFilename;
     char *statsFilename;
+    int  port;
     char *rootDir;
+    short int background;
 } Command;
 
 Command *extractCommandOptions(int argc, char *argv[]);

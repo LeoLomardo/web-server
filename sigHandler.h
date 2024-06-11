@@ -2,10 +2,10 @@
 #define USER_SIG_H
 
 typedef struct {
+    char *statsFileName;
     int html_count;
     int image_count;
     int text_count;
-    char *statsFileName;
 } StatsInfo;
 
 extern StatsInfo stats;

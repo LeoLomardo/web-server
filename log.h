@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
+//adicionei apenas para ficar visualmente mais facil do usuario ver o comando
 #define RED   "\x1B[31m"
 #define GRN   "\x1B[32m"
 #define YEL   "\x1B[33m"
@@ -18,14 +19,14 @@
 #define MAX_BUFFER_SIZE 70000
 
 typedef struct logbuffer{
-    int start;
-    int end;
-    int count;
-    int size;
     char entries[MAX_ENTRIES][MAX_BUFFER_SIZE];
     char *logFile;
     pthread_mutex_t mutex;
     pthread_cond_t cond;
+    int start;
+    int end;
+    int count;
+    int size;
 } LogBuffer;
 
 void LBufferInit(LogBuffer *buffer, const char *filename);
