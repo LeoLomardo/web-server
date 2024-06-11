@@ -1,5 +1,4 @@
 #include "log.h"
-
 FILE *logFile;
 
 void *LPrinfFile(void *arg){

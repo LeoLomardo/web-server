@@ -1,7 +1,6 @@
 #include "server.h"
 
 LogBuffer log_buffer;
-StatsInfo stats;
 
 int runningFlag = 1;
 int server_sockfd;
@@ -87,7 +86,6 @@ void serverRun(Command *command) {
         *new_sockfd = accept(server_sockfd, (struct sockaddr *)&client_addr, &client_len);
         if (*new_sockfd < 0) {
             if (errno == EAGAIN || errno == EWOULDBLOCK) {
-                // Nenhuma conexão disponível, espere um pouco e tente novamente
                 free(new_sockfd);
                 struct timespec ts;
                 ts.tv_sec = 1;

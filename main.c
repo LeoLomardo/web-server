@@ -1,10 +1,8 @@
 #include "main.h"
 
-Command *command;
-
 int main(int argc, char *argv[]){
 
-    command = extractCommandOptions(argc, argv);
+    Command *command = extractCommandOptions(argc, argv);
     if(command == NULL){
         fprintf(stderr, "main - Error extracting command options\n");
         return EXIT_FAILURE;

@@ -1,8 +1,5 @@
 #include "client.h"
 
-extern LogBuffer log_buffer;
-extern Command *command;
-extern StatsInfo stats;
 
 void *clientRequest(void *client_sockfd){
     time_t now = time(NULL);

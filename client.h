@@ -2,20 +2,17 @@
 #define CLIENT_H
 
 #include <stdio.h>
-#include <fcntl.h>
 #include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <time.h>
-#include <pthread.h>
-#include <sys/stat.h>
+#include <time.h> //pega data e hora
+#include <sys/stat.h> //pega ultima modificacao e tamanho do arquivo
+#include <unistd.h> //read write close
+#include <fcntl.h>
 #include <arpa/inet.h>
 
-#include "log.h"
-#include "usrSig.h"
-#include "commandHandle.h"
-#include "main.h"
-
+#include "usrSig.h" // precisa pela struct statsInfo
+#include "log.h" // precisa pela struct logBuffer
 void *clientRequest(void *client_sockfd);
+
 
 #endif

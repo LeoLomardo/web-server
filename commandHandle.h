@@ -14,8 +14,6 @@ typedef struct command {
     char *rootDir;
 } Command;
 
-
 Command *extractCommandOptions(int argc, char *argv[]);
-
 
 #endif

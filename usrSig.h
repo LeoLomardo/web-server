@@ -3,11 +3,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <signal.h>
+#include <sys/socket.h>
 #include <unistd.h>  
 #include <string.h>
+#include <signal.h>
 
 #include "client.h"
+#include "log.h"
+#include "server.h"
 
 typedef struct {
     int html_count;
@@ -15,6 +18,8 @@ typedef struct {
     int text_count;
     char *statsFileName;
 } StatsInfo;
+
+extern StatsInfo stats;
 
 void sigHndler(int signal);
 

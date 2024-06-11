@@ -7,17 +7,5 @@
 			|->slip regiao critica
 				ou
 			|->.sh ou curl/wget requisiçoes em paralelo-----OK
-		-Testar imagem, html e texto
 	-Valgrind checar memoryleak
-	-Arrumar funcao que lida com sinal
-	-Colocar coleta de estatisticas
-	-criar arquivo para gerar estatisticas
---Duvidas:
-	-Cada arquivo C com apenas 1 funcao? SIM
-	-Podem 2 arquivos C diferentes terem apenas 1 headder? SIM
-	-Como testar erros?  Ta feito, .sh
-	-Formato ideal para printar Erros? Ta feito 
-
-
-infos: ulimit pra liberar + threads
 

@@ -1,11 +1,6 @@
 #include "usrSig.h"
 
-extern int runningFlag;
-extern int server_sockfd;
-
-extern StatsInfo stats;
-extern FILE *logFile;
-extern LogBuffer log_buffer;
+StatsInfo stats;
 
 void sigHndler(int signal){
     if(signal == SIGINT || signal == SIGTERM || signal == SIGUSR1){
