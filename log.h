@@ -2,8 +2,6 @@
 #define LOG_H
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <pthread.h>
 
 #define RED   "\x1B[31m"

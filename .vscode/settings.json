@@ -28,7 +28,11 @@
         "fcntl.h": "c",
         "netdb.h": "c",
         "assert.h": "c",
-        "inet.h": "c"
+        "inet.h": "c",
+        "errno.h": "c",
+        "clientrequest.h": "c",
+        "extractcommandoptions.h": "c",
+        "serverrun.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

@@ -1,8 +1,17 @@
-#include "usrSig.h"
+#include "sigHandler.h"
+#include "clientRequest.h"
+#include "log.h"
+#include "serverRun.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/socket.h>
+#include <unistd.h>  
+#include <string.h>
+#include <signal.h>
 
 StatsInfo stats;
 
-void sigHndler(int signal){
+void sigHandler(int signal){
     if(signal == SIGINT || signal == SIGTERM || signal == SIGUSR1){
         runningFlag = 0;
         
@@ -14,6 +23,6 @@ void sigHndler(int signal){
         fclose(logFile);
         free(stats.statsFileName);
         close(server_sockfd);
-        printf("sigHndler - Server off\n");
+        printf("sigHandler - Server off\n");
     }
 }

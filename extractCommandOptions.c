@@ -1,4 +1,8 @@
-#include "commandHandle.h"
+#include "extractCommandOptions.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
 
 Command *extractCommandOptions(int argc, char *argv[]){
     Command *command = (Command *)malloc(sizeof(Command));

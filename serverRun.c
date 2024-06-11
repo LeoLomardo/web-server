@@ -1,4 +1,21 @@
-#include "server.h"
+#include "serverRun.h"
+#include "log.h"
+#include "clientRequest.h" // funcao clientRequest
+#include "sigHandler.h"
+#include "extractCommandOptions.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <pthread.h>
+#include <arpa/inet.h>
+#include <signal.h>
+#include <netdb.h>
+#include <errno.h> //errno new_socket
+#include <fcntl.h>
 
 LogBuffer log_buffer;
 
@@ -23,8 +40,8 @@ void serverRun(Command *command) {
     strcpy(stats.statsFileName, command->statsFilename);
     free(command->statsFilename);
 
-    signal(SIGUSR1, sigHndler);
-    signal(SIGINT, sigHndler);
+    signal(SIGUSR1, sigHandler);
+    signal(SIGINT, sigHandler);
 
     LBufferInit(&log_buffer, command->logFilename);
     free(command->logFilename);

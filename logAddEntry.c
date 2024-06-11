@@ -1,4 +1,7 @@
 #include "log.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void LEntry(LogBuffer *buffer, const char *entry){
     pthread_mutex_lock(&buffer->mutex);

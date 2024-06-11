@@ -8,4 +8,7 @@
 				ou
 			|->.sh ou curl/wget requisiçoes em paralelo-----OK
 	-Valgrind checar memoryleak
-
+	-Nome arquivo == nome funcao
+	-Deletar main.h 
+	-Melhorar api p des objeto
+	-explicar func magica makefile

@@ -1,4 +1,7 @@
 #include "log.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void LBufferInit(LogBuffer *buffer, const char *filename){
     buffer->start = 0;

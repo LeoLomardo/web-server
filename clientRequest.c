@@ -1,5 +1,13 @@
-#include "client.h"
-
+#include "clientRequest.h"
+#include "sigHandler.h" // precisa pela struct statsInfo
+#include "log.h" // precisa pela struct logBuffer
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h> //pega data e hora
+#include <sys/stat.h> //pega ultima modificacao e tamanho do arquivo
+#include <unistd.h> //read write close
+#include <arpa/inet.h>
 
 void *clientRequest(void *client_sockfd){
     time_t now = time(NULL);

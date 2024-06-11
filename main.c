@@ -1,4 +1,7 @@
-#include "main.h"
+#include "extractCommandOptions.h"
+#include "serverRun.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[]){
 
@@ -7,10 +10,8 @@ int main(int argc, char *argv[]){
         fprintf(stderr, "main - Error extracting command options\n");
         return EXIT_FAILURE;
     }
+
     serverRun(command);
-    /*
-    * Tive problemas em liberar a memoria alocada para a string contendo o nome do diretorio raiz
-    */
     free(command->rootDir);
     free(command);
     return 0;
