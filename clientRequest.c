@@ -1,6 +1,7 @@
 #include "clientRequest.h"
 #include "sigHandler.h" // precisa pela struct statsInfo
 #include "log.h" // precisa pela struct logBuffer
+#include "serverRun.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -152,11 +153,7 @@ void *clientRequest(void *client_sockfd){
             return NULL;
         }
     }
-    /*
-     * Nao consegui adicionar o tempo com o fuso brasileiro, e tambem tive um problema com o horario, quando faco mais de 1 requisicao, o log escreve horarios com
-     * uma diferenca de tempo muito grande, e nao consegui resolver esse problema.
-     */
-    snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d 200 OK: %s\n", t.tm_year + 1900, t.tm_mon + 1, t.tm_mday, t.tm_hour, t.tm_min, t.tm_sec, full_path);
+    snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d %02d:%02d:%02d (%s) 200 OK: %s\n", t.tm_year + 1900, t.tm_mon + 1, t.tm_mday, t.tm_hour, t.tm_min, t.tm_sec,client_ip, full_path);
     LEntry(&log_buffer, buffer);
 
     fclose(inputFile);

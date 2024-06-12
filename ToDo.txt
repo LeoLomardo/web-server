@@ -4,4 +4,4 @@
 	-adicionar leitura de parametros abreviado e extendido
 		abreviado: ./web_server -p 8080 -l log.txt -s stats.txt -r ./testes -b
 		extendido: ./web_server --port 8080 --log log.txt --statistics stats.txt --root ./testes --background
-
+	-tirar signal SIGINT, manter apenas SIGUSR1

@@ -20,6 +20,7 @@ LogBuffer log_buffer;
 
 int runningFlag = 1;
 int server_sockfd;
+char *client_ip = NULL;
 
 void serverRun(Command *command) {
     if (command == NULL) {
@@ -114,8 +115,9 @@ void serverRun(Command *command) {
                 break;
             }
         }
-        
-        printf("serverRun - New connection from %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+
+        client_ip = inet_ntoa(client_addr.sin_addr);
+        printf("serverRun - New connection from %s:%d\n", client_ip, ntohs(client_addr.sin_port));
 
         pthread_t thread_id;
         if (pthread_create(&thread_id, NULL, clientRequest, new_sockfd) != 0) {
@@ -124,7 +126,7 @@ void serverRun(Command *command) {
             continue;
         }
 
-        printf("serverRun - Thread created for client %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+        printf("serverRun - Thread created for client %s:%d\n", client_ip, ntohs(client_addr.sin_port));
         pthread_detach(thread_id);
     }
 

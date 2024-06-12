@@ -9,5 +9,5 @@ void serverRun(Command *command);
 extern int runningFlag ;
 extern int server_sockfd;
 extern LogBuffer log_buffer;
-
+extern char *client_ip;
 #endif

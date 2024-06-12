@@ -19,3 +19,43 @@
 2024-06-11 19:19:54 200 OK: ./testes/index_texto_imagem.html
 2024-06-11 19:19:54 200 OK: ./testes/index_texto_imagem.html
 2024-06-11 19:20:04 200 OK: ./testes/index_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:38:51 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_texto.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_imagem.html
+2024-06-11 19:49:22 (127.0.0.1) 200 OK: ./testes/index_imagem.html
