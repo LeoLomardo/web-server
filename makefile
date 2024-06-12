@@ -1,4 +1,5 @@
 PROJ_NAME = web_server
+
 CC = gcc
 # Utilizei flags com W para exibir erros mais detalhados 
 CFLAGS = -Wall -Wpedantic -Wextra -O2 -g
@@ -32,7 +33,7 @@ main.o: main.c extractCommandOptions.h serverRun.h log.h
 
 serverRun.o: serverRun.c serverRun.h log.h extractCommandOptions.h clientRequest.h sigHandler.h
 	$(CC) -c $(CFLAGS) -o serverRun.o serverRun.c
-	
+
 sigHandler.o: sigHandler.c sigHandler.h clientRequest.h log.h serverRun.h extractCommandOptions.h
 	$(CC) -c $(CFLAGS) -o sigHandler.o sigHandler.c
 

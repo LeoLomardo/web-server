@@ -40,9 +40,10 @@ void serverRun(Command *command) {
     free(command->statsFilename);
 
     signal(SIGUSR1, sigHandler);
-    //SIGINT apenas para agilizar os testes
-    signal(SIGINT, sigHandler);
-
+    /*
+    *SIGINT apenas para agilizar os testes
+    *signal(SIGINT, sigHandler);
+    */
     LBufferInit(&log_buffer, command->logFilename);
     free(command->logFilename);
 
