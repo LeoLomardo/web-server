@@ -24,7 +24,8 @@ Command *extractCommandOptions(int argc, char *argv[]){
         free(command);
         exit(EXIT_FAILURE);
     }
-   struct option long_options[] = {
+
+    struct option long_options[] = {
         {"port", required_argument, 0, 'p'},
         {"log", required_argument, 0, 'l'},
         {"statistics", required_argument, 0, 's'},

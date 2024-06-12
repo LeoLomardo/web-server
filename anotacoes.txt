@@ -1,0 +1,29 @@
+Durante meus estudos sobre makefile e como montar um de maneira organizada e eficiente, vi que eu poderia fazer um makefile que gera arquivos .d
+para cada arquivo necessario para o projeto, e dentro desse makefile ele mostra as dependencias de cada arquivo.
+Entao fiz o makefile abaixo inicialmente para gerar os arquivos .d e depois eu utilizei a informacao para montar o makefile acima.
+
+PROJ_NAME = web_server
+CC = gcc
+CFLAGS = -Wall -Wpedantic -Wextra -O2 -g 
+LDFLAGS = -pthread 
+C_SOURCE = clientRequest.c extractCommandOptions.c logAddEntry.c logInitBuffer.c logPrintFile.c main.c serverRun.c sigHandler.c
+OBJ = $(C_SOURCE:.c=.o)
+DEPS := $(OBJ:.o=.d)
+all: $(PROJ_NAME)
+
+$(PROJ_NAME): $(OBJ)
+	$(CC) -o $@ $^ $(LDFLAGS) $(CFLAGS)
+
+%.o: %.c
+	$(CC) -c -o $@ $< $(CFLAGS)
+%.d: %.c
+	@$(CC) $< -MM -MT $(@:%.d=%.o) >$@
+-include $(DEPS)
+
+Por exemplo, o arquivo clientRequest.d possuia esse conteudo:
+    "clientRequest.o: clientRequest.c clientRequest.h sigHandler.h log.h serverRun.h extractCommandOptions.h
+Então eu montei no makefile assim:
+    clientRequest.o: clientRequest.c clientRequest.h sigHandler.h log.h serverRun.h extractCommandOptions.h
+        $(CC) -c $(CFLAGS) -o clientRequest.o clientRequest.c
+
+Eu poderia manter de maneira automática, como estava, porém julguei que assim fica mais organizado e fácil de entender os arquivos e suas dependencias

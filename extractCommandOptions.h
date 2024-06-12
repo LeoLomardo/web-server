@@ -1,7 +1,7 @@
 #ifndef COMMAND_HANDLE_C
 #define COMMAND_HANDLE_C
 
-typedef struct command {
+typedef struct command{
     char *logFilename;
     char *statsFilename;
     int  port;

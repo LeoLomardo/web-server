@@ -17,10 +17,9 @@
 #include <fcntl.h>
 
 LogBuffer log_buffer;
-
+char *client_ip = NULL;
 int runningFlag = 1;
 int server_sockfd;
-char *client_ip = NULL;
 
 void serverRun(Command *command) {
     if (command == NULL) {
@@ -41,6 +40,7 @@ void serverRun(Command *command) {
     free(command->statsFilename);
 
     signal(SIGUSR1, sigHandler);
+    //SIGINT apenas para agilizar os testes
     signal(SIGINT, sigHandler);
 
     LBufferInit(&log_buffer, command->logFilename);
@@ -83,7 +83,6 @@ void serverRun(Command *command) {
         exit(EXIT_FAILURE);
     }
 
-    // Configurar o socket para não bloqueio
     int flags = fcntl(server_sockfd, F_GETFL, 0);
     fcntl(server_sockfd, F_SETFL, flags | O_NONBLOCK);
 

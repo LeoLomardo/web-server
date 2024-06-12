@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
-//adicionei apenas para ficar visualmente mais facil do usuario ver o comando
+//adicionei apenas para ficar visualmente mais facil do usuario ver o comando para terminar o programa
 #define RED   "\x1B[31m"
 #define GRN   "\x1B[32m"
 #define YEL   "\x1B[33m"
@@ -29,11 +29,11 @@ typedef struct logbuffer{
     int size;
 } LogBuffer;
 
+extern FILE *logFile;
+extern LogBuffer log_buffer;
+
 void LBufferInit(LogBuffer *buffer, const char *filename);
 void LEntry(LogBuffer *buffer, const char *entry);
 void *LPrinfFile(void *arg);
-
-extern FILE *logFile;
-extern LogBuffer log_buffer;
 
 #endif

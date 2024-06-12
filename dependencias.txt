@@ -1,10 +1,15 @@
+clientRequest.o: clientRequest.c clientRequest.h sigHandler.h log.h \
+ serverRun.h extractCommandOptions.h
+
+extractCommandOptions.o: extractCommandOptions.c extractCommandOptions.h
+
+LBufferInit.o: LBufferInit.c log.h
+
+LEntry.o: LEntry.c log.h
+
+LPrintFile.o: LPrintFile.c log.h
+
+main.o: main.c extractCommandOptions.h serverRun.h log.h
+
+serverRun.o: serverRun.c serverRun.h log.h extractCommandOptions.h \
  clientRequest.h sigHandler.h
-./clientRequest.o clientRequest.d:  clientRequest.c clientRequest.h sigHandler.h log.h
- extractCommandOptions.h
-./extractCommandOptions.o extractCommandOptions.d:  extractCommandOptions.c extractCommandOptions.h
-./logAddEntry.o logAddEntry.d:  logAddEntry.c log.h
-./logInitBuffer.o logInitBuffer.d:  logInitBuffer.c log.h
-./logPrintFile.o logPrintFile.d:  logPrintFile.c log.h
-./main.o main.d:  main.c extractCommandOptions.h serverRun.h log.h
-./serverRun.o serverRun.d:  serverRun.c serverRun.h log.h extractCommandOptions.h \
-./sigHandler.o sigHandler.d:  sigHandler.c sigHandler.h clientRequest.h log.h serverRun.h \

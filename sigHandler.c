@@ -19,7 +19,7 @@ void sigHandler(int signal){
         fprintf(arquivoStats, "HTML: %d\nIMAGEM: %d\nTEXTO: %d\n", stats.html_count, stats.image_count, stats.text_count);
         fclose(arquivoStats);
         
-        fclose(logFile);
+        fclose(logFile); //variavel global que vem do log.h e e declarada no LPrintFile.c
         free(stats.statsFileName);
         close(server_sockfd);
         printf("sigHandler - Server off\n");

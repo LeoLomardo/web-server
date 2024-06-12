@@ -74,8 +74,6 @@ void *clientRequest(void *client_sockfd){
             /**
              * Utilizei SEEK_END para poder calcular o tamanho do arquivo e alocar a memoria necessaria 
              * Depois, para nao precisar utilizar rewind, utilizei SEEK_SET para voltar o ponteiro para o comeco do arquivo
-             * Abaixo eu utilizo a variavel content_length para armazenar o tamanho do arquivo, porem quando eu utilizava ela dentro do if,
-             * tinha problemas, entao preferi criar novamente utilizando essa maneira.
              */
             fseek(inputFile, 0, SEEK_END);
             long file_size = ftell(inputFile);
@@ -120,10 +118,12 @@ void *clientRequest(void *client_sockfd){
         }
     }
 
-    char timebuf[128];
-    char lastmodbuf[128];
+    char timebuf[128]; //data requisicao em formato diferente do q vai pro log, aqui o mes fica abreviado, nn em formato numerico
     strftime(timebuf, sizeof(timebuf), "%a, %d %b %Y %H:%M:%S GMT", gmtime(&now));
+
+    char lastmodbuf[128]; //ultima modificacao do arquivo requisitado pelo cliente
     strftime(lastmodbuf, sizeof(lastmodbuf), "%a, %d %b %Y %H:%M:%S GMT", gmtime(&lastChange.st_mtime));
+
     snprintf(header, sizeof(header), 
         "HTTP/1.1 200 OK\r\n"
         "Server:FerramentasUnixPUC/1.1\r\n"
