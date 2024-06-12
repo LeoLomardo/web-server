@@ -69,10 +69,10 @@ Todos os arquivos-fontes (arquivo C e cabeçalhos) e o makefile devem ser carreg
     $make
     
     ```
-3. Inicie o servidor utilizando a porta desejada, eu testei utilizando as portas 8080 ou 3000:
+3. Inicie o servidor utilizando a porta desejada, eu testei utilizando a portas 8080. Para iniciar você pode utilizar as opções por extenso ou de maneira abreviada:
     ```bash
-    $./web_server -p 8080 -l log.txt -s stats.txt -r ./ -b
-    $./web_server -p 3000 -l log.txt -s stats.txt -r ./ -b 
+    $./web_server -p 8080 -l log.txt -s stats.txt -r ./testes -b
+    $./web_server --port 8080 --log log.txt --statistics stats.txt --root ./testes --background
     ```
     
 ### Uso e Testes
@@ -83,11 +83,28 @@ $chmod u+x testes.sh
 $./testes.sh
 ```
 
-Caso queira realizar apenas testes pontuais, execute utilizando curl:
+Caso queira realizar apenas testes pontuais, você pode execute utilizando curl:
 ```bash
-curl curl http://localhost:3000/index.html
+$curl -s -o /dev/null http://localhost:8080/testes/index.html   
+```
+    
+Ou então pode realizar a requisição através do seu navegador web, acessando o link:
+```web
+http://localhost:8080/testes/index.html 
 ```
 Valgrind:
 ```bash
-valgrind  --leak-check=full --show-leak-kinds=all -s  ./web_server   
+valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind-out.txt ./web_server -p 8080 -l log.txt -s stats.txt -r ./testes -b
 ```
+
+- `--tool=memcheck`: Especifica a ferramenta do Valgrind a ser utilizada. memcheck é a ferramenta padrão e é usada para detectar erros de memória, como acesso a memória não inicializada, leitura e escrita fora dos limites do buffer, uso de memória desalocada e vazamentos de memória.
+
+- `--leak-check=full`: Configura o Valgrind para realizar uma verificação completa de vazamentos de memória. Esta opção faz com que o Valgrind relate todos os vazamentos de memória encontrados.
+
+- `--show-leak-kinds=all`: Configura o Valgrind para mostrar todos os tipos de vazamentos de memória. Isso inclui:
+
+- `--track-origins=yes`: Ativa o rastreamento das origens de valores não inicializados. Isso pode ser útil para diagnosticar a origem de variáveis não inicializadas no código.
+
+- `--verbose`: Habilita a saída detalhada, fornecendo informações adicionais sobre o que o Valgrind está fazendo. Isso pode incluir detalhes sobre a alocação de memória e a detecção de erros.
+
+- `--log-file=valgrind-out.txt`: Especifica que a saída do Valgrind deve ser gravada no arquivo valgrind-out.txt. Isso é útil para salvar os resultados da análise para posterior revisão.
