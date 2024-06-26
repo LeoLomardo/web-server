@@ -5,6 +5,8 @@
 #include <getopt.h>
 #include <string.h>
 
+extern int *optarg;
+
 Command *extractCommandOptions(int argc, char *argv[]){
     Command *command = (Command *)malloc(sizeof(Command));
     if(command == NULL){
